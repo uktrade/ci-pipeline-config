@@ -8,12 +8,11 @@ environments:
     app: dit-staging/staging-iigb/invest-staging
     secrets: true
     vars: []
-    run:
-      - python manage.py compilemessages
+    run: []
   - environment: prod 
     type: gds
     app: dit-services/iigb/invest-prod
     secrets: true
     vars: []
-    run:
-      - python manage.py compilemessages
+    run: []
+
