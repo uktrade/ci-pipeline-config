@@ -1,0 +1,11 @@
+---
+name: finance-admin
+namespace: finance
+scm: git@github.com:uktrade/fadmin2.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-finance/financeadmin-dev
+    vars: []
+    secrets: false
+    run: []
