@@ -1,0 +1,17 @@
+---
+name: market-access
+namespace: market-access
+scm: git@github.com:uktrade/market-access-frontend.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-marketaccess/market-access-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-marketacess/market-access-staging
+    vars: []
+    secrets: true
+    run: []
