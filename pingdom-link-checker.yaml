@@ -8,4 +8,4 @@ environments:
     app: dit-services/webops/pingdom-link-checker
     secrets: true
     vars: []
-run: []
+    run: []
