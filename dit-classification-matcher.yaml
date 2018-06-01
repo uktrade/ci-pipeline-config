@@ -1,0 +1,19 @@
+---
+name: dit-classification-matcher
+namespace: exopps
+scm: git@github.com:uktrade/dit-classification-matcher.git
+environments:
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-exopps/dit-classification-matcher-staging
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/exopps/dit-classification-matcher
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
