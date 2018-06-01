@@ -6,12 +6,14 @@ environments:
   - environment: staging
     type: gds
     app: dit-staging/staging-exopps/dit-classification-matcher-staging
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: false
     run: []
   - environment: production
     type: gds
     app: dit-services/exopps/dit-classification-matcher
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: false
     run: []
