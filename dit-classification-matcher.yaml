@@ -8,12 +8,10 @@ environments:
     app: dit-staging/staging-exopps/dit-classification-matcher-staging
     vars: []
     secrets: false
-    run:
-      - "true"
+    run: []
   - environment: production
     type: gds
     app: dit-services/exopps/dit-classification-matcher
     vars: []
     secrets: false
-    run:
-      - "true"
+    run: []
