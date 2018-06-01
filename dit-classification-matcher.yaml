@@ -6,7 +6,7 @@ environments:
   - environment: staging
     type: gds
     app: dit-staging/staging-exopps/dit-classification-matcher-staging
-    vars:[]
+    vars: []
     secrets: false
     run:
       - "true"
