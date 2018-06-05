@@ -3,9 +3,9 @@ name: directory-api
 namespace: directory
 scm: git@github.com:uktrade/directory-api.git
 environments:
-  - environment: dev
+  - environment: cd-feature
     type: gds
-    app: dit-staging/dev-directory/directory-api-dev
+    app: dit-staging/staging-directory/directory-api-cd-feature
     vars: []
     secrets: true
     run: []
