@@ -1,0 +1,23 @@
+---
+name: invest-pir-api
+namespace: iigb
+scm: https://github.com/uktrade/pir-api
+environments:
+  - environment: dev 
+    type: gds
+    app: dit-staging/dev-investpir/invest-pir-api-dev
+    secrets: true
+    vars: []
+    run: []
+  - environment: staging 
+    type: gds
+    app: dit-staging/staging-investpir/invest-pir-api-staging
+    secrets: true
+    vars: []
+    run: []
+   - environment: production
+    type: gds
+    app: dit-services/investpir/invest-pir-api
+    secrets: true
+    vars: []
+    run: []
