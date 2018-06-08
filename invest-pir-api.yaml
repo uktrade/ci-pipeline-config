@@ -15,7 +15,7 @@ environments:
     secrets: true
     vars: []
     run: []
-   - environment: production
+  - environment: production
     type: gds
     app: dit-services/investpir/invest-pir-api
     secrets: true
