@@ -1,0 +1,25 @@
+name: directory-ui-verification-provider
+namespace: directory
+scm: git@github.com:uktrade/directory-ui-verification-provider.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-directory/directory-ui-verification-provider-dev
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-directory/directory-ui-verification-provider-staging
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: prod
+    type: gds
+    app: dit-services/directory/directory-ui-verification-provider
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
