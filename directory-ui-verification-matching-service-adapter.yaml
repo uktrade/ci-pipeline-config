@@ -1,0 +1,25 @@
+name: directory-ui-verification-matching-service-adapter
+namespace: directory
+scm: git@github.com:uktrade/directory-ui-verification-matching-service-adapter.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-directory/directory-ui-verification-matching-service-adapter-dev
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-directory/directory-ui-verification-matching-service-adapter-staging
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: prod
+    type: gds
+    app: dit-services/directory/directory-ui-verification-matching-service-adapter
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
