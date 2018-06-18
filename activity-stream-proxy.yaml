@@ -1,6 +1,6 @@
 ---
 name: activity-stream-proxy
-namespace: activity-stream-proxy
+namespace: activity-stream
 scm: git@github.com:uktrade/activity-stream-proxy.git
 environments:
   - environment: dev
