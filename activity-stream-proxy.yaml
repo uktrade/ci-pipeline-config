@@ -1,0 +1,11 @@
+---
+name: activity-stream-proxy
+namespace: activity-stream-proxy
+scm: git@github.com:uktrade/activity-stream-proxy.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-activity-stream/activity-stream-proxy-dev
+    vars: []
+    secrets: true
+    run: []
