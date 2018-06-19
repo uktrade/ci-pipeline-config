@@ -1,0 +1,23 @@
+---
+name: iigb-invest-ui
+namespace: iigb
+scm: git@github.com:uktrade/invest-ui.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-iigb/invest-ui-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-iigb/invest-ui-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    app: dit-services/iigb/invest-ui
+    vars: []
+    secrets: true
+    run: []
