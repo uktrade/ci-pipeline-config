@@ -15,7 +15,7 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: prod
+  - environment: production
     type: gds
     app: dit-services/iigb/invest-ui
     vars: []
