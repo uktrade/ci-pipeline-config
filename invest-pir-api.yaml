@@ -1,7 +1,7 @@
 ---
 name: invest-pir-api
 namespace: iigb
-scm: https://github.com/uktrade/pir-api
+scm: https://github.com/uktrade/invest-pir-api
 environments:
   - environment: dev 
     type: gds
