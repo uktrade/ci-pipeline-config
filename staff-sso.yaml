@@ -9,3 +9,9 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: staging 
+    type: gds
+    app: dit-staging/staging-datahub/staff-sso-staging
+    vars: []
+    secrets: true
+    run: []
