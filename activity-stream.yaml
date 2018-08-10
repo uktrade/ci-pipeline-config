@@ -9,12 +9,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-activity-stream/activity-stream-staging
-    vars: []
-    secrets: true
-    run: []
   - environment: production
     type: gds
     app: dit-services/activity-stream/activity-stream
