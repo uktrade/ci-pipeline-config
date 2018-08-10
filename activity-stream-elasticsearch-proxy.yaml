@@ -1,0 +1,21 @@
+---
+name: activity-stream
+namespace: activity-stream
+scm: git@github.com:uktrade/activity-stream.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-activity-stream/activity-stream-elasticsearch-proxy-dev
+    vars:
+      - APP_PATH: elasticsearch_proxy
+    secrets: true
+    run:
+      - "cp -r -f shared elasticsearch_proxy"
+  - environment: production
+    type: gds
+    app: dit-services/activity-stream/activity-stream-elasticsearch-proxy
+    vars:
+      - APP_PATH: elasticsearch_proxy
+    secrets: true
+    run:
+      - "cp -r -f shared elasticsearch_proxy"

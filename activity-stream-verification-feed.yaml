@@ -5,17 +5,15 @@ scm: git@github.com:uktrade/activity-stream.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-activity-stream/activity-stream-dev
+    app: dit-staging/dev-activity-stream/activity-stream-verification-feed-dev
     vars:
-      - APP_PATH: core
+      - APP_PATH: verification_feed
     secrets: true
-    run:
-      - "cp -r -f shared core"
+    run: []
   - environment: production
     type: gds
-    app: dit-services/activity-stream/activity-stream
+    app: dit-services/activity-stream/activity-stream-verification-feed
     vars:
-      - APP_PATH: core
+      - APP_PATH: verification_feed
     secrets: true
-    run:
-      - "cp -r -f shared core"
+    run: []
