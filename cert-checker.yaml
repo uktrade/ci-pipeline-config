@@ -1,0 +1,11 @@
+---
+name: cert-checker 
+namespace: webops 
+scm: git@github.com:uktrade/cert-checker.git
+environments:
+  - environment: prod
+    type: gds
+    app: dit-services/webops/cert_checker
+    secrets: true
+    vars: []
+    run: []
