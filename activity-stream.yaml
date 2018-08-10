@@ -6,12 +6,16 @@ environments:
   - environment: dev
     type: gds
     app: dit-staging/dev-activity-stream/activity-stream-dev
-    vars: []
+    vars:
+      - APP_PATH: core
     secrets: true
-    run: []
+    run:
+      - "cp -r -f shared core"
   - environment: production
     type: gds
     app: dit-services/activity-stream/activity-stream
-    vars: []
+    vars:
+      - APP_PATH: core
     secrets: true
-    run: []
+    run:
+      - "cp -r -f shared core"
