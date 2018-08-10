@@ -1,9 +1,4 @@
 ---
-# Please note that all vars are stored in the vault (https://vault-ui.apps.ci.uktrade.io),
-# namely at the paths:
-# dit/activity-stream/activity-stream/dev
-# dit/activity-stream/activity-stream/staging
-# dit/activity-stream/activity-stream/production
 name: activity-stream
 namespace: activity-stream
 scm: git@github.com:uktrade/activity-stream.git
