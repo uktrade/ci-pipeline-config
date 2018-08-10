@@ -1,5 +1,5 @@
 ---
-name: activity-stream
+name: activity-stream-verification-feed
 namespace: activity-stream
 scm: git@github.com:uktrade/activity-stream.git
 environments:
