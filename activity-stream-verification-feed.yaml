@@ -1,0 +1,19 @@
+---
+name: activity-stream-verification-feed
+namespace: activity-stream
+scm: git@github.com:uktrade/activity-stream.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-activity-stream/activity-stream-verification-feed-dev
+    vars:
+      - APP_PATH: verification_feed
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/activity-stream/activity-stream-verification-feed
+    vars:
+      - APP_PATH: verification_feed
+    secrets: true
+    run: []

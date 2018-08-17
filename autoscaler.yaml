@@ -1,0 +1,11 @@
+---
+name: autoscaler 
+namespace: webops 
+scm: git@github.com:uktrade/dit-cf-autoscaler.git
+environments:
+  - environment: production
+    type: gds
+    app: dit-services/webops/autoscaler
+    vars: []
+    secrets: true
+    run: []

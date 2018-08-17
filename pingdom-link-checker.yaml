@@ -1,0 +1,11 @@
+---
+name: pingdom-link-checker 
+namespace: webops 
+scm: git@github.com:uktrade/pingdom-link-checker.git
+environments:
+  - environment: prod
+    type: gds
+    app: dit-services/webops/pingdom-link-checker
+    secrets: true
+    vars: []
+    run: []

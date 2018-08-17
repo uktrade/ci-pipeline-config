@@ -5,7 +5,7 @@ scm: git@github.com:uktrade/fadmin2.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-finance/financeadmin-dev
+    app: dit-staging/dev-finance/financeadmin
     vars: []
-    secrets: false
+    secrets: true
     run: []
