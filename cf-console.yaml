@@ -1,0 +1,12 @@
+---
+name: cf-console 
+namespace: webops 
+scm: https://github.com/cloudfoundry-incubator/stratos.git
+environments:
+  - environment: production
+    type: gds
+    app: dit-services/webops/cf-console
+    vars:
+      - CF_API_FORCE_SECURE: true
+    secrets: false
+    run: []
