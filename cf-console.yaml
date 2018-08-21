@@ -7,6 +7,6 @@ environments:
     type: gds
     app: dit-services/webops/cf-console
     vars:
-      - CF_API_FORCE_SECURE: true
+      - CF_API_FORCE_SECURE: "true"
     secrets: false
     run: []
