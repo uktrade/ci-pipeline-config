@@ -1,0 +1,11 @@
+---
+name: content-request-form
+namespace: webops 
+scm: git@github.com:uktrade/content-request-form.git
+environments:
+  - environment: prod
+    type: gds
+    app: dit-services/webops/content-request-form
+    secrets: true
+    vars: []
+    run: []
