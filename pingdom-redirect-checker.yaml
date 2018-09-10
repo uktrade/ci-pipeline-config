@@ -8,4 +8,4 @@ environments:
     app: dit-services/webops/pingdom-redirect-checker
     secrets: true
     vars: []
-run: []
+    run: []
