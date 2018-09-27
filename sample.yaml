@@ -1,11 +1,12 @@
 ---
-name: sandbox
+name: sample
 namespace: shared
 scm: git@github.com:uktrade/cf-sample-app-nodejs.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/sandbox/cf-nodejs
+    region: eu-west-2
+    app: dit-staging/webops-dev/sample-app
     vars: []
     secrets: true
     run: []
