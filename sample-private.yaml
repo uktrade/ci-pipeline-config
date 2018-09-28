@@ -8,5 +8,5 @@ environments:
     region: eu-west-2
     app: dit-staging/webops-dev/sample-app-private
     vars: []
-    secrets: true
+    secrets: false
     run: []
