@@ -1,0 +1,17 @@
+---
+name: prospects-fe
+namespace: datasci
+scm: git@github.com:uktrade/data-science-frontend
+environments:
+  - environment: staging
+    type: gds
+    app: dit-staging/staging-datasci/prospects-fe-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/datasci/prospects-fe
+    vars: []
+    secrets: true
+    run: []
