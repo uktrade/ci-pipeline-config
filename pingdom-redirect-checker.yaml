@@ -1,0 +1,11 @@
+---
+name: pingdom-redirect-checker 
+namespace: webops 
+scm: git@github.com:uktrade/pingdom-redirect-checker.git
+environments:
+  - environment: production
+    type: gds
+    app: dit-services/webops/pingdom-redirect-checker
+    secrets: true
+    vars: []
+    run: []

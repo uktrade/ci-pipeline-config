@@ -10,6 +10,8 @@ environments:
     vars: []
     secrets: true
     run:
+      - "jq -r '.engines.node' package.json > .nvmrc"
+      - "nvm install"
       - "npm install"
       - "npm run prebuild-ui"
   - environment: production_eu-west-2
@@ -19,5 +21,7 @@ environments:
     vars: []
     secrets: true
     run:
+      - "jq -r '.engines.node' package.json > .nvmrc"
+      - "nvm install"
       - "npm install"
       - "npm run prebuild-ui"
