@@ -3,9 +3,19 @@ name: cf-console
 namespace: webops 
 scm: https://github.com/cloudfoundry-incubator/stratos.git
 environments:
-  - environment: production
+  - environment: production_eu-west-1
     type: gds
+    region: eu-west-1
     app: dit-services/webops/cf-console
+    vars: []
+    secrets: true
+    run:
+      - "npm install"
+      - "npm run prebuild-ui"
+  - environment: production_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/console
     vars: []
     secrets: true
     run:
