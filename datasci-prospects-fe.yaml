@@ -1,7 +1,7 @@
 ---
 name: prospects-fe
 namespace: datasci
-scm: git@github.com:uktrade/data-science-frontend
+scm: git@github.com:uktrade/data-science-frontend.git
 environments:
   - environment: staging
     type: gds
