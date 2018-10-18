@@ -1,6 +1,6 @@
 ---
 name: trade-tariff-management
-namespace: tariffs
+namespace: trade-tariffs
 scm: git@github.com:uktrade/trade-tariff-management.git
 environments:
   - environment: development
