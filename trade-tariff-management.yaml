@@ -9,29 +9,25 @@ environments:
     vars:
       - RAILS_ENV: production
     secrets: true
-    run:
-      - "true"
+    run: []
   - environment: staging
     type: gds
     app: dit-staging/uat-tariffs/tariffs-uat
     vars:
       - RAILS_ENV: production
     secrets: true
-    run:
-      - "true"
+    run: []
   - environment: training
     type: gds
     app: dit-staging/training-tariffs/tariffs-training
     vars:
       - RAILS_ENV: production
     secrets: true
-    run:
-      - "true"
+    run: []
   - environment: production
     type: gds
     app: dit-services/tariffs/tariffs-production
     vars:
       - RAILS_ENV: production
     secrets: true
-    run:
-      - "true"
+    run: []
