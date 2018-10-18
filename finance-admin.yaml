@@ -9,3 +9,9 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: production
+    type: gds
+    app: dit-services/finance/financeadmin-prod
+    vars: []
+    secrets: true
+    run: []
