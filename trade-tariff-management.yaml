@@ -1,0 +1,37 @@
+---
+name: trade-tariff-management
+namespace: tariffs
+scm: git@github.com:uktrade/trade-tariff-management.git
+environments:
+  - environment: development
+    type: gds
+    app: dit-staging/dev-tariffs/tariffs-dev
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
+  - environment: staging
+    type: gds
+    app: dit-staging/uat-tariffs/tariffs-uat
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
+  - environment: training
+    type: gds
+    app: dit-staging/training-tariffs/tariffs-training
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
+  - environment: production
+    type: gds
+    app: dit-services/tariffs/tariffs-production
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
