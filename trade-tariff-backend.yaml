@@ -1,0 +1,12 @@
+---
+name: trade-tariff-backend
+namespace: trade-tariffs
+scm: git@gitlab.bitzesty.com:clients/trade-tariff/trade-tariff-backend.git
+environments:
+  - environment: training
+    type: gds
+    app: dit-staging/training-tariffs/uktt-backend-training
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run: []
