@@ -1,7 +1,7 @@
 ---
 name: trade-tariff-frontend
 namespace: trade-tariffs
-scm: git@gitlab.bitzesty.com:clients/trade-tariff/trade-tariff-frontend.git
+scm: git@github.com:bitzesty/trade-tariff-frontend.git
 environments:
   - environment: training
     type: gds
