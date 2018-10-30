@@ -1,0 +1,17 @@
+---
+name: fido
+namespace: finance
+scm: git@github.com:uktrade/fido.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-finance/fido
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/finance/fido-prod
+    vars: []
+    secrets: true
+    run: []
