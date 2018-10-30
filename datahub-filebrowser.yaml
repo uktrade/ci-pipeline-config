@@ -12,12 +12,12 @@ environments:
     run: []
   - environment: demo
     type: gds
-    app: dit-staging/dev-datahub/datahub-filebrowser-demo
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-filebrowser-demo
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
-    run:
-      - "true"
+    run: []
   - environment: uat
     type: gds
     app: dit-staging/uat-datahub/datahub-filebrowser-uat

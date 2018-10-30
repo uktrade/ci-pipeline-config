@@ -17,7 +17,7 @@ environments:
     run: []
   - environment: demo
     type: gds
-    app: dit-staging/dev-datahub/datahub-omis-demo
+    app: dit-staging/datahub-dev/datahub-omis-demo
     vars: []
     secrets: true
     run: []
