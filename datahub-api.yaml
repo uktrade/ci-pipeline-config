@@ -17,7 +17,8 @@ environments:
     run: []
   - environment: demo
     type: gds
-    app: dit-staging/dev-datahub/datahub-api-demo
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-api-demo
     vars: []
     secrets: true
     run: []
