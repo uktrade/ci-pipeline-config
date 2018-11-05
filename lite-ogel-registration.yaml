@@ -39,3 +39,43 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-ogel-registration-dev
+    vars:
+      - JAVA_EXTENSION: zip
+      - NEXUS_PATH: lite-builds-raw/lite-ogel-registration/lite-ogel-registration
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-ogel-registration-uat
+    vars:
+      - JAVA_EXTENSION: zip
+      - NEXUS_PATH: lite-builds-raw/lite-ogel-registration/lite-ogel-registration
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-ogel-registration-staging
+    vars:
+      - JAVA_EXTENSION: zip
+      - NEXUS_PATH: lite-builds-raw/lite-ogel-registration/lite-ogel-registration
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-ogel-registration
+    vars:
+      - JAVA_EXTENSION: zip
+      - NEXUS_PATH: lite-builds-raw/lite-ogel-registration/lite-ogel-registration
+      - USE_NEXUS: true
+    secrets: true
+    run: []
