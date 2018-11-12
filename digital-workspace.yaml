@@ -7,6 +7,7 @@ environments:
     app: dit-staging/dev-intranet/digital-workspace-dev
     vars:
       - API: 'digital-workspace-dev.cloudapps.digital/'
+      - APPLICATION_ENV: dev
     secrets: true
     run:
       - "true"
@@ -14,6 +15,7 @@ environments:
     type: gds
     app: dit-staging/staging-intranet/digital-workspace-staging
     vars:
+      - APPLICATION_ENV: staging
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run:
@@ -22,6 +24,7 @@ environments:
     type: gds
     app: dit-services/intranet/digital-workspace
     vars:
+      - APPLICATION_ENV: production
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run:
