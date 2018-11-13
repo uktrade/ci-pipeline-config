@@ -5,6 +5,7 @@ scm: git@github.com:uktrade/data-science-frontend.git
 environments:
   - environment: staging
     type: gds
+    region: eu-west-2
     app: dit-staging/staging-datasci/prospects-fe-staging
     vars: []
     secrets: true
