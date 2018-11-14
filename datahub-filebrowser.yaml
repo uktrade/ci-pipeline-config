@@ -20,6 +20,7 @@ environments:
     run: []
   - environment: uat
     type: gds
+    region: eu-west-2
     app: dit-staging/uat-datahub/datahub-filebrowser-uat
     vars:
       - DISABLE_COLLECTSTATIC: 1

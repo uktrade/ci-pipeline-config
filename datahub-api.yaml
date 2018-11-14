@@ -11,6 +11,7 @@ environments:
     run: []
   - environment: uat
     type: gds
+    region: eu-west-2
     app: dit-staging/uat-datahub/datahub-api-uat
     vars: []
     secrets: true
