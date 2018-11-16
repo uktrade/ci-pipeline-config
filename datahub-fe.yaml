@@ -12,7 +12,7 @@ environments:
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/uat-datahub/datahub-uat
+    app: dit-staging/datahub-uat/datahub-uat
     vars: []
     secrets: true
     run: []

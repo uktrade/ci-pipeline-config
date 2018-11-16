@@ -21,7 +21,7 @@ environments:
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/uat-datahub/datahub-filebrowser-uat
+    app: dit-staging/datahub-uat/datahub-filebrowser-uat
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
