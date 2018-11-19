@@ -3,7 +3,7 @@ name: lite-ogel-service
 namespace: lite
 scm: git@github.com:uktrade/lite-ogel-service.git
 environments:
-  - environment: dev
+  - environment: dev_eu-west-1
     type: gds
     app: dit-staging/dev-lite/lite-ogel-service-dev
     vars:
@@ -21,7 +21,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging
+  - environment: staging_eu-west-1
     type: gds
     app: dit-staging/staging-lite/lite-ogel-service-staging
     vars:
@@ -39,7 +39,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: dev_eu-west-2
+  - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/lite-dev/lite-ogel-service-dev
@@ -59,7 +59,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging_eu-west-2
+  - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/lite-staging/lite-ogel-service-staging
