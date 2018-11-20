@@ -6,7 +6,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/dev-datahub/datahub-api-dev
+    app: dit-staging/datahub-dev/datahub-api-dev
     vars: []
     secrets: true
     run: []
@@ -27,7 +27,7 @@ environments:
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-datahub/datahub-api-staging
+    app: dit-staging/datahub-staging/datahub-api-staging
     vars: []
     secrets: true
     run: []

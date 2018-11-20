@@ -6,7 +6,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/dev-datahub/datahub-filebrowser-dev
+    app: dit-staging/datahub-dev/datahub-filebrowser-dev
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
@@ -30,7 +30,7 @@ environments:
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-datahub/datahub-filebrowser-staging
+    app: dit-staging/datahub-staging/datahub-filebrowser-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
