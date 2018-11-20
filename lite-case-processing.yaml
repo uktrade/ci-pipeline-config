@@ -3,7 +3,7 @@ name: lite-case-processing
 namespace: lite
 scm: git@github.com:uktrade/lite-case-processing.git
 environments:
-  - environment: dev
+  - environment: dev_eu-west-1
     type: gds
     app: dit-staging/dev-lite/lite-case-processing-dev
     vars:
@@ -12,7 +12,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: dev_eu-west-2
+  - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/lite-dev/lite-case-processing-dev

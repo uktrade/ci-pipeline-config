@@ -3,7 +3,7 @@ name: lite-control-code-service
 namespace: lite
 scm: git@github.com:uktrade/lite-control-code-service.git
 environments:
-  - environment: dev
+  - environment: dev_eu-west-1
     type: gds
     app: dit-staging/dev-lite/lite-control-code-service-dev
     vars:
@@ -21,7 +21,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging
+  - environment: staging_eu-west-1
     type: gds
     app: dit-staging/staging-lite/lite-control-code-service-staging
     vars:
@@ -39,7 +39,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: dev_eu-west-2
+  - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/lite-dev/lite-control-code-service-dev
@@ -59,7 +59,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging_eu-west-2
+  - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/lite-staging/lite-control-code-service-staging
