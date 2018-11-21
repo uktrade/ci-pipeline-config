@@ -5,24 +5,28 @@ scm: git@github.com:uktrade/cf-nginx-ip-filter.git
 environments:
   - environment: datahub-dev
     type: gds
+    region: eu-west-2
     app: dit-staging/datahub-dev/datahub-dev-ip-filter
     vars: []
     secrets: true
     run: []
   - environment: datahub-uat
     type: gds
+    region: eu-west-2
     app: dit-staging/datahub-uat/datahub-uat-ip-filter
     vars: []
     secrets: true
     run: []
   - environment: datahub-staging
     type: gds
+    region: eu-west-2
     app: dit-staging/atahub-staging/datahub-staging-ip-filter
     vars: []
     secrets: true
     run: []
   - environment: datahub
     type: gds
+    region: eu-west-2
     app: dit-services/datahub/datahub-ip-filter
     vars: []
     secrets: true
