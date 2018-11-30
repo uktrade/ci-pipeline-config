@@ -3,42 +3,6 @@ name: lite-ogel-service
 namespace: lite
 scm: git@github.com:uktrade/lite-ogel-service.git
 environments:
-  - environment: dev_eu-west-1
-    type: gds
-    app: dit-staging/dev-lite/lite-ogel-service-dev
-    vars:
-      - JAVA_EXTENSION: jar
-      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-ogel-service
-      - USE_NEXUS: true
-    secrets: true
-    run: []
-  - environment: uat
-    type: gds
-    app: dit-staging/uat-lite/lite-ogel-service-uat
-    vars:
-      - JAVA_EXTENSION: jar
-      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-ogel-service
-      - USE_NEXUS: true
-    secrets: true
-    run: []
-  - environment: staging_eu-west-1
-    type: gds
-    app: dit-staging/staging-lite/lite-ogel-service-staging
-    vars:
-      - JAVA_EXTENSION: jar
-      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-ogel-service
-      - USE_NEXUS: true
-    secrets: true
-    run: []
-  - environment: prod
-    type: gds
-    app: dit-services/lite/lite-ogel-service
-    vars:
-      - JAVA_EXTENSION: jar
-      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-ogel-service
-      - USE_NEXUS: true
-    secrets: true
-    run: []
   - environment: dev
     type: gds
     region: eu-west-2
@@ -49,7 +13,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: uat_eu-west-2
+  - environment: uat
     type: gds
     region: eu-west-2
     app: dit-staging/lite-uat/lite-ogel-service-uat
@@ -69,7 +33,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: prod_eu-west-2
+  - environment: prod
     type: gds
     region: eu-west-2
     app: dit-services/lite/lite-ogel-service
