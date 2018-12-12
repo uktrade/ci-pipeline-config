@@ -1,0 +1,10 @@
+name: clamav
+namespace: clamav
+scm: git@github.com:uktrade/docker-clamav.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/sandbox/clamav
+    vars: []
+    secrets: false
+    run: []
