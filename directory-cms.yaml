@@ -17,7 +17,7 @@ environments:
     run: []
   - environment: uat
     type: gds
-    app: dit-services/directory/directory-cms
+    app: dit-staging/uat-directory/directory-cms-uat
     vars: []
     secrets: true
     run: []
