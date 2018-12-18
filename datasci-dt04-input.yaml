@@ -6,7 +6,7 @@ environments:
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-datasci/dt04-staging
+    app: dit-staging/datasci-staging/dt04-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
