@@ -15,6 +15,12 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: uat
+    type: gds
+    app: dit-staging/uat-iigb/invest-ui-uat
+    vars: []
+    secrets: true
+    run: []
   - environment: production
     type: gds
     app: dit-services/iigb/invest-ui
