@@ -13,6 +13,7 @@ environments:
     run: []
   - environment: production
     type: gds
+    region: eu-west-2
     app: dit-services/datasci/dt04
     vars:
       - DISABLE_COLLECTSTATIC: 1
