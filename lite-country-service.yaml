@@ -5,7 +5,8 @@ scm: git@github.com:uktrade/lite-country-service.git
 environments:
   - environment: dev_eu-west-1
     type: gds
-    app: dit-staging/dev-lite/lite-country-service-dev
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-country-service-dev
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-country-service
@@ -14,7 +15,8 @@ environments:
     run: []
   - environment: uat
     type: gds
-    app: dit-staging/uat-lite/lite-country-service-uat
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-country-service-uat
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-country-service
@@ -23,7 +25,8 @@ environments:
     run: []
   - environment: staging_eu-west-1
     type: gds
-    app: dit-staging/staging-lite/lite-country-service-staging
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-country-service-staging
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-country-service
@@ -32,6 +35,7 @@ environments:
     run: []
   - environment: prod
     type: gds
+    region: eu-west-2
     app: dit-services/lite/lite-country-service
     vars:
       - JAVA_EXTENSION: jar

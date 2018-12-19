@@ -5,7 +5,8 @@ scm: git@github.com:uktrade/lite-licence-application.git
 environments:
   - environment: dev_eu-west-1
     type: gds
-    app: dit-staging/dev-lite/lite-licence-application-dev
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-licence-application-dev
     vars:
       - JAVA_EXTENSION: zip
       - NEXUS_PATH: lite-builds-raw/lite-licence-application/lite-licence-application
@@ -14,7 +15,8 @@ environments:
     run: []
   - environment: uat
     type: gds
-    app: dit-staging/uat-lite/lite-licence-application-uat
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-licence-application-uat
     vars:
       - JAVA_EXTENSION: zip
       - NEXUS_PATH: lite-builds-raw/lite-licence-application/lite-licence-application
@@ -23,7 +25,8 @@ environments:
     run: []
   - environment: staging_eu-west-1
     type: gds
-    app: dit-staging/staging-lite/lite-licence-application-staging
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-licence-application-staging
     vars:
       - JAVA_EXTENSION: zip
       - NEXUS_PATH: lite-builds-raw/lite-licence-application/lite-licence-application
@@ -32,6 +35,7 @@ environments:
     run: []
   - environment: prod
     type: gds
+    region: eu-west-2
     app: dit-services/lite/lite-licence-application
     vars:
       - JAVA_EXTENSION: zip
