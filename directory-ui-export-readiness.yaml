@@ -15,7 +15,7 @@ environments:
     vars: []
     secrets: true
     run: []
-   - environment: uat
+  - environment: uat
     type: gds
     app: dit-staging/uat-directory/directory-ui-export-readiness-uat
     vars: []
