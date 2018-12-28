@@ -63,3 +63,11 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: prod-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: traderemedies-services/traderemedies/trade-remedies-public
+    vars: []
+    secrets: true
+    run:
+      - "true"
