@@ -4,7 +4,7 @@ scm: git@github.com:uktrade/clamav-rest-nginx-proxy.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-webops/clamav-nginx-rest-proxy
+    app: dit-staging/dev-webops/clamav-rest-nginx-proxy
     vars: []
     secrets: true
     run: []
