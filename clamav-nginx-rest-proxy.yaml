@@ -1,0 +1,10 @@
+name: clamav-nginx-rest-proxy
+namespace: webops
+scm: git@github.com:uktrade/clamav-rest-nginx-proxy.git
+environments:
+  - environment: dev
+    type: gds
+    app: dit-staging/dev-webops/clamav-nginx-rest-proxy
+    vars: []
+    secrets: true
+    run: []
