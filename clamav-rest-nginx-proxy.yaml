@@ -1,4 +1,4 @@
-name: clamav-nginx-rest-proxy
+name: clamav-rest-nginx-proxy
 namespace: webops
 scm: git@github.com:uktrade/clamav-rest-nginx-proxy.git
 environments:
