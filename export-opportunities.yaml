@@ -27,9 +27,27 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: eu-west-2-continuous-deployment
+    type: gds
+    region: eu-west-2
+    app: dit-staging/exopps-dev/export-opportunities-continuous-deployment
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
   - environment: staging
     type: gds
     app: dit-staging/staging-exopps/export-opportunities-staging
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
+  - environment: eu-west-2-staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/exopps-staging/export-opportunities-staging
     vars:
       - RAILS_ENV: production
     secrets: true

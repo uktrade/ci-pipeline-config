@@ -5,13 +5,15 @@ scm: git@github.com:uktrade/omis-frontend.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-datahub/datahub-omis-dev
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-omis-dev
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
-    app: dit-staging/uat-datahub/datahub-omis-uat
+    region: eu-west-2
+    app: dit-staging/datahub-uat/datahub-omis-uat
     vars: []
     secrets: true
     run: []
@@ -24,7 +26,8 @@ environments:
     run: []
   - environment: staging
     type: gds
-    app: dit-staging/staging-datahub/datahub-omis-staging
+    region: eu-west-2
+    app: dit-staging/datahub-staging/datahub-omis-staging
     vars: []
     secrets: true
     run: []

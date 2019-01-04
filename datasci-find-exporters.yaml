@@ -6,14 +6,14 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/datasci-staging/find-exporterse-dev
+    app: dit-staging/datasci-staging/find-exporters-dev
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/datasci-staging/find-exporterse-staging
+    app: dit-staging/datasci-staging/find-exporters-staging
     vars: []
     secrets: true
     run: []

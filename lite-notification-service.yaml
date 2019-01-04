@@ -3,9 +3,10 @@ name: lite-notification-service
 namespace: lite
 scm: git@github.com:uktrade/lite-notification-service.git
 environments:
-  - environment: dev
+  - environment: dev_eu-west-1
     type: gds
-    app: dit-staging/dev-lite/lite-notification-service-dev
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-notification-service-dev
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
@@ -14,16 +15,18 @@ environments:
     run: []
   - environment: uat
     type: gds
-    app: dit-staging/uat-lite/lite-notification-service-uat
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-notification-service-uat
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging
+  - environment: staging_eu-west-1
     type: gds
-    app: dit-staging/staging-lite/lite-notification-service-staging
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-notification-service-staging
     vars:
       - JAVA_EXTENSION: jar
       - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
@@ -32,6 +35,47 @@ environments:
     run: []
   - environment: prod
     type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-notification-service
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-notification-service-dev
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-notification-service-uat
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-notification-service-staging
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-notification-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
     app: dit-services/lite/lite-notification-service
     vars:
       - JAVA_EXTENSION: jar
