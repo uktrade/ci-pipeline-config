@@ -3,6 +3,13 @@ name: find-exporters
 namespace: datasci
 scm: git@github.com:uktrade/data-science-frontend.git
 environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-staging/find-exporters-dev
+    vars: []
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
