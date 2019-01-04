@@ -1,19 +1,26 @@
 ---
-name: prospects-fe
+name: find-exporters
 namespace: datasci
 scm: git@github.com:uktrade/data-science-frontend.git
 environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-staging/find-exporterse-dev
+    vars: []
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-datasci/prospects-fe-staging
+    app: dit-staging/datasci-staging/find-exporterse-staging
     vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/datasci/prospects-fe
+    app: dit-services/datasci/find-exporters
     vars: []
     secrets: true
     run: []
