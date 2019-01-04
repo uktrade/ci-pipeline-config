@@ -33,6 +33,7 @@ environments:
     run: []
   - environment: production
     type: gds
+    region: eu-west-2
     app: dit-services/datahub/datahub-lab
     vars: []
     secrets: true
