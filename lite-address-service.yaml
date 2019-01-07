@@ -3,7 +3,7 @@ name: lite-address-service
 namespace: lite
 scm: git@github.com:uktrade/lite-address-service.git
 environments:
-  - environment: dev
+  - environment: dev_eu-west-1
     type: gds
     region: eu-west-2
     app: dit-staging/lite-dev/lite-address-service-dev
@@ -23,7 +23,7 @@ environments:
       - USE_NEXUS: true
     secrets: true
     run: []
-  - environment: staging
+  - environment: staging_eu-west-1
     type: gds
     region: eu-west-2
     app: dit-staging/lite-staging/lite-address-service-staging
@@ -34,6 +34,46 @@ environments:
     secrets: true
     run: []
   - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-address-service
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-address-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-address-service-dev
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-address-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-address-service-uat
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-address-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-address-service-staging
+    vars:
+      - JAVA_EXTENSION: jar
+      - NEXUS_PATH: lite-builds/uk/gov/bis/lite/lite-address-service
+      - USE_NEXUS: true
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
     type: gds
     region: eu-west-2
     app: dit-services/lite/lite-address-service

@@ -5,13 +5,15 @@ scm: git@github.com:uktrade/dt07-reporting.git
 environments:
   - environment: staging
     type: gds
-    app: dit-staging/staging-datasci/dt07-staging
+    region: eu-west-2
+    app: dit-staging/datasci-staging/dt07-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
   - environment: production
     type: gds
+    region: eu-west-2
     app: dit-services/datasci/dt07
     vars:
       - DISABLE_COLLECTSTATIC: 1

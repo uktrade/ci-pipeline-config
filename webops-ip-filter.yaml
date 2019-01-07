@@ -1,0 +1,19 @@
+---
+name: ip-filter
+namespace: webops
+scm: git@github.com:uktrade/cf-nginx-ip-filter.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/ip-filter-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/ip-filter
+    vars: []
+    secrets: true
+    run: []
