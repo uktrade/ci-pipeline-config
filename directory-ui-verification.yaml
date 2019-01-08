@@ -20,3 +20,24 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/directory-ui-verification-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/directory-ui-verification-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/directory-ui-verification
+    vars: []
+    secrets: true
+    run: []

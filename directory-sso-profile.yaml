@@ -21,3 +21,24 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/directory-sso-profile-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/directory-sso-profile-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/directory-sso-profile
+    vars: []
+    secrets: true
+    run: []

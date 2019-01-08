@@ -23,3 +23,27 @@ environments:
     secrets: true
     run:
       - "./run.sh"
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/directory-ui-verification-matching-service-adapter-dev
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/directory-ui-verification-matching-service-adapter-staging
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/directory-ui-verification-matching-service-adapter
+    vars: []
+    secrets: true
+    run:
+      - "./run.sh"
