@@ -11,8 +11,26 @@ environments:
     secrets: true
     run:
       - "cp -r -f shared elasticsearch_proxy"
+  - environment: dev-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/activity-stream-dev/activity-stream-elasticsearch-proxy-dev
+    vars:
+      - APP_PATH: elasticsearch_proxy
+    secrets: true
+    run:
+      - "cp -r -f shared elasticsearch_proxy"
   - environment: production
     type: gds
+    app: dit-services/activity-stream/activity-stream-elasticsearch-proxy
+    vars:
+      - APP_PATH: elasticsearch_proxy
+    secrets: true
+    run:
+      - "cp -r -f shared elasticsearch_proxy"
+  - environment: production-eu-west-2
+    type: gds
+    region: eu-west-2
     app: dit-services/activity-stream/activity-stream-elasticsearch-proxy
     vars:
       - APP_PATH: elasticsearch_proxy
