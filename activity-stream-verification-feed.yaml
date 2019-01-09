@@ -28,7 +28,7 @@ environments:
   - environment: production-eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-services/activity-stream-dev/activity-stream-verification-feed
+    app: dit-services/activity-stream/activity-stream-verification-feed
     vars:
       - APP_PATH: verification_feed
     secrets: true
