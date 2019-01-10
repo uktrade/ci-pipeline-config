@@ -6,28 +6,28 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-1
-    app: dit-staging/datahub-dev/datahub-omis-dev
+    app: dit-staging/dev-datahub/datahub-omis-dev
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
     region: eu-west-1
-    app: dit-staging/datahub-uat/datahub-omis-uat
+    app: dit-staging/uat-datahub/datahub-omis-uat
     vars: []
     secrets: true
     run: []
   - environment: demo
     type: gds
     region: eu-west-1
-    app: dit-staging/datahub-dev/datahub-omis-demo
+    app: dit-staging/dev-datahub/datahub-omis-demo
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-1
-    app: dit-staging/datahub-staging/datahub-omis-staging
+    app: dit-staging/staging-datahub/datahub-omis-staging
     vars: []
     secrets: true
     run: []
