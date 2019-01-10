@@ -7,11 +7,13 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/activity-stream-dev/activity-stream-kibana-dev
+    vars: []
     secrets: true
     run: []
   - environment: production-eu-west-2
     type: gds
     region: eu-west-2
     app: dit-services/activity-stream/activity-stream-kibana
+    vars: []
     secrets: true
     run: []
