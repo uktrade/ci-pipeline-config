@@ -1,0 +1,19 @@
+---
+name: activity-stream-kibana
+namespace: activity-stream
+scm: git@github.com:uktrade/kibana-paas.git
+environments:
+  - environment: dev-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/activity-stream-dev/activity-stream-kibana-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: production-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/activity-stream/activity-stream-kibana
+    vars: []
+    secrets: true
+    run: []
