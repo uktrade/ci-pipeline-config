@@ -5,28 +5,28 @@ scm: git@github.com:uktrade/data-hub-frontend.git
 environments:
   - environment: dev
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-staging/datahub-dev/datahub-dev
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-staging/datahub-uat/datahub-uat
     vars: []
     secrets: true
     run: []
   - environment: demo
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-staging/datahub-dev/datahub-demo
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-staging/datahub-staging/datahub-staging
     vars: []
     secrets: true
