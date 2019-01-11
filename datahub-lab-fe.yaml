@@ -5,29 +5,29 @@ scm: git@github.com:uktrade/data-hub-lab-frontend.git
 environments:
   - environment: dev
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-dev/datahub-lab-dev
+    region: eu-west-1
+    app: dit-staging/dev-datahub/datahub-lab-dev
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-uat/datahub-lab-uat
+    region: eu-west-1
+    app: dit-staging/uat-datahub/datahub-lab-uat
     vars: []
     secrets: true
     run: []
   - environment: demo
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-dev/datahub-lab-demo
+    region: eu-west-1
+    app: dit-staging/dev-datahub/datahub-lab-demo
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-staging/datahub-lab-staging
+    region: eu-west-1
+    app: dit-staging/staging-datahub/datahub-lab-staging
     vars: []
     secrets: true
     run: []

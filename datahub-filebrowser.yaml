@@ -5,32 +5,32 @@ scm: git@github.com:uktrade/data-hub-file-browser.git
 environments:
   - environment: dev
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-dev/datahub-filebrowser-dev
+    region: eu-west-1
+    app: dit-staging/dev-datahub/datahub-filebrowser-dev
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
   - environment: demo
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-dev/datahub-filebrowser-demo
+    region: eu-west-1
+    app: dit-staging/dev-datahub/datahub-filebrowser-demo
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
   - environment: uat
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-uat/datahub-filebrowser-uat
+    region: eu-west-1
+    app: dit-staging/uat-datahub/datahub-filebrowser-uat
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
   - environment: staging
     type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-staging/datahub-filebrowser-staging
+    region: eu-west-1
+    app: dit-staging/staging-datahub/datahub-filebrowser-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true

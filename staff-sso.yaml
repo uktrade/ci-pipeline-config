@@ -15,3 +15,17 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/datahub/staff-sso
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/staging-datahub/staff-sso-staging
+    vars: []
+    secrets: true
+    run: []
