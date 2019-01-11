@@ -33,6 +33,42 @@ environments:
     run: []
   - environment: production
     type: gds
+    region: eu-west-1
+    app: dit-services/datahub/datahub
+    vars: []
+    secrets: true
+    run: []
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-uat/datahub-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: demo_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-demo
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-staging/datahub-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production_eu-west-2
+    type: gds
+    region: eu-west-2
     app: dit-services/datahub/datahub
     vars: []
     secrets: true
