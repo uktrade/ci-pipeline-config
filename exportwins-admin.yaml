@@ -24,3 +24,27 @@ environments:
     secrets: true
     run:
       - "npm install && npm run build"
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/mi-dev/exportwins-admin-dev
+    vars: []
+    secrets: true
+    run:
+      - "npm install && npm run build"
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/mi-staging/exportwins-admin-staging
+    vars: []
+    secrets: true
+    run:
+      - "npm install && npm run build"
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/mi/exportwins-admin
+    vars: []
+    secrets: true
+    run:
+      - "npm install && npm run build"

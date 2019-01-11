@@ -21,3 +21,24 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/mi-dev/exportwins-data-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/mi-staging/exportwins-data-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/mi/exportwins-data
+    vars: []
+    secrets: true
+    run: []
