@@ -18,7 +18,7 @@ environments:
   - environment: dev_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-dev/directory-forms-api-staging
+    app: dit-staging/directory-dev/directory-forms-api-dev
     vars: []
     secrets: true
     run: []
