@@ -13,7 +13,7 @@ environments:
   - environment: eu-west-2-dev
     type: gds
     region: eu-west-2
-    app: dit-staging/dev-intranet/digital-workspace-dev
+    app: dit-staging/intranet-dev/digital-workspace-dev
     vars:
       - API: 'digital-workspace-dev.london.cloudapps.digital/'
     secrets: true
@@ -30,7 +30,7 @@ environments:
   - environment: eu-west-2-staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-intranet/digital-workspace-staging
+    app: dit-staging/intranet-staging/digital-workspace-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true

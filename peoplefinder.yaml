@@ -14,7 +14,7 @@ environments:
   - environment: eu-west-2-dev
     type: gds
     region: eu-west-2
-    app: dit-staging/dev-intranet/peoplefinder-dev
+    app: dit-staging/intranet-dev/peoplefinder-dev
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
@@ -31,7 +31,7 @@ environments:
   - environment: eu-west-2-staging
     type: gds
     region: eu-west-2
-    app: dit-staging/staging-intranet/peoplefinder-staging
+    app: dit-staging/intranet-staging/peoplefinder-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
