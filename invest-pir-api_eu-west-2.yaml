@@ -1,0 +1,26 @@
+---
+name: invest-pir-api
+namespace: directory
+scm: https://github.com/uktrade/invest-pir-api
+environments:
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/invest-pir-api-dev
+    secrets: true
+    vars: []
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/invest-pir-api-staging
+    secrets: true
+    vars: []
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/invest-pir-api
+    secrets: true
+    vars: []
+    run: []
