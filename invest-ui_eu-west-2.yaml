@@ -1,5 +1,5 @@
 ---
-name: iigb-invest-ui
+name: invest-ui
 namespace: directory
 scm: git@github.com:uktrade/invest-ui.git
 environments:
