@@ -5,53 +5,13 @@ scm: git@github.com:uktrade/data-hub-file-browser.git
 environments:
   - environment: dev
     type: gds
-    region: eu-west-1
-    app: dit-staging/dev-datahub/datahub-filebrowser-dev
-    vars:
-      - DISABLE_COLLECTSTATIC: 1
-    secrets: true
-    run: []
-  - environment: demo
-    type: gds
-    region: eu-west-1
-    app: dit-staging/dev-datahub/datahub-filebrowser-demo
-    vars:
-      - DISABLE_COLLECTSTATIC: 1
-    secrets: true
-    run: []
-  - environment: uat
-    type: gds
-    region: eu-west-1
-    app: dit-staging/uat-datahub/datahub-filebrowser-uat
-    vars:
-      - DISABLE_COLLECTSTATIC: 1
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    region: eu-west-1
-    app: dit-staging/staging-datahub/datahub-filebrowser-staging
-    vars:
-      - DISABLE_COLLECTSTATIC: 1
-    secrets: true
-    run: []
-  - environment: production
-    type: gds
-    region: eu-west-1
-    app: dit-services/datahub/datahub-filebrowser
-    vars:
-      - DISABLE_COLLECTSTATIC: 1
-    secrets: true
-    run: []
-  - environment: dev_eu-west-2
-    type: gds
     region: eu-west-2
     app: dit-staging/datahub-dev/datahub-filebrowser-dev
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
-  - environment: uat_eu-west-2
+  - environment: uat
     type: gds
     region: eu-west-2
     app: dit-staging/datahub-uat/datahub-filebrowser-uat
@@ -59,7 +19,7 @@ environments:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
-  - environment: demo_eu-west-2
+  - environment: demo
     type: gds
     region: eu-west-2
     app: dit-staging/datahub-dev/datahub-filebrowser-demo
@@ -67,7 +27,7 @@ environments:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
-  - environment: staging_eu-west-2
+  - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/datahub-staging/datahub-filebrowser-staging
@@ -75,7 +35,7 @@ environments:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
-  - environment: production_eu-west-2
+  - environment: production
     type: gds
     region: eu-west-2
     app: dit-services/datahub/datahub-filebrowser
