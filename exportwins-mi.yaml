@@ -5,37 +5,19 @@ scm: git@github.com:uktrade/export-wins-ui-mi.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-mi/datahub-mi-dev
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-mi/datahub-mi-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: prod
-    type: gds
-    app: dit-services/mi/datahub-mi
-    vars: []
-    secrets: true
-    run: []
-  - environment: dev_eu-west-2
-    type: gds
     region: eu-west-2
     app: dit-staging/mi-dev/datahub-mi-dev
     vars: []
     secrets: true
     run: []
-  - environment: staging_eu-west-2
+  - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/mi-staging/datahub-mi-staging
     vars: []
     secrets: true
     run: []
-  - environment: prod_eu-west-2
+  - environment: prod
     type: gds
     region: eu-west-2
     app: dit-services/mi/datahub-mi
