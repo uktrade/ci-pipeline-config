@@ -1,0 +1,33 @@
+---
+name: great-domestic-ui
+namespace: directory
+scm: git@github.com:uktrade/great-domestic-ui.git
+environments:
+  - environment: dev_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/great-domestic-ui-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/great-domestic-ui-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/great-domestic-ui-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/great-domestic-ui
+    vars: []
+    secrets: true
+    run: []
