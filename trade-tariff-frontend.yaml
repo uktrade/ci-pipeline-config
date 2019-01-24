@@ -10,3 +10,12 @@ environments:
       - RAILS_ENV: production
     secrets: true
     run: []
+environments:
+  - environment: training_eu-west-2
+    region: eu-west-2
+    type: gds
+    app: dit-staging/tariffs-training/uktt-frontend-training
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run: []
