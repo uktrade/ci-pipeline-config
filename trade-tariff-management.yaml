@@ -23,7 +23,7 @@ environments:
     run: []
   - environment: production
     type: gds
-    app: dit-services/tariffs/tariffs-production
+    app: dit-services/tariffs/tariffs
     vars: []
     secrets: true
     run: []
@@ -51,7 +51,7 @@ environments:
   - environment: production_eu-west-2
     region: eu-west-2
     type: gds
-    app: dit-services/tariffs/tariffs-production
+    app: dit-services/tariffs/tariffs
     vars: []
     secrets: true
     run: []
