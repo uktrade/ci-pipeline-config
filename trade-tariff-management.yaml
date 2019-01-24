@@ -6,60 +6,52 @@ environments:
   - environment: development
     type: gds
     app: dit-staging/dev-tariffs/tariffs-dev
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     app: dit-staging/uat-tariffs/tariffs-uat
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: training
     type: gds
     app: dit-staging/training-tariffs/tariffs-training
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
     app: dit-services/tariffs/tariffs-production
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: development_eu-west-2
     region: eu-west-2
     type: gds
     app: dit-staging/tariffs-dev/tariffs-dev
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: staging_eu-west-2
     region: eu-west-2
     type: gds
     app: dit-staging/tariffs-uat/tariffs-uat
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: training_eu-west-2
     region: eu-west-2
     type: gds
     app: dit-staging/tariffs-training/tariffs-training
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
   - environment: production_eu-west-2
     region: eu-west-2
     type: gds
     app: dit-services/tariffs/tariffs-production
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
