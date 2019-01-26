@@ -5,63 +5,33 @@ scm: git@github.com:uktrade/market-access-api.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-marketaccess/market-access-api-dev
-    vars: []
-    secrets: true
-    run: []
-  - environment: uat
-    type: gds
-    app: dit-staging/uat-marketaccess/market-access-api-uat
-    vars: []
-    secrets: true
-    run: []
-  - environment: demo
-    type: gds
-    app: dit-staging/dev-marketaccess/market-access-api-demo
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-marketaccess/market-access-api-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: production
-    type: gds
-    app: dit-services/marketaccess/market-access-api
-    vars: []
-    secrets: true
-    run: []
-  - environment: dev_eu-west-2
-    type: gds
     region: eu-west-2
     app: dit-staging/market-access-dev/market-access-api-dev
     vars: []
     secrets: true
     run: []
-  - environment: demo_eu-west-2
+  - environment: demo
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-dev/market-access-api-demo
     vars: []
     secrets: true
     run: []
-  - environment: uat_eu-west-2
+  - environment: uat
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-uat/market-access-api-uat
     vars: []
     secrets: true
     run: []
-  - environment: staging_eu-west-2
+  - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-staging/market-access-api-staging
     vars: []
     secrets: true
     run: []
-  - environment: production_eu-west-2
+  - environment: production
     type: gds
     region: eu-west-2
     app: dit-services/market-access/market-access-api
