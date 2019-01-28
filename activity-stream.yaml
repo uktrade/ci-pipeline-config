@@ -3,26 +3,10 @@ name: activity-stream
 namespace: activity-stream
 scm: git@github.com:uktrade/activity-stream.git
 environments:
-  - environment: dev
-    type: gds
-    app: dit-staging/dev-activity-stream/activity-stream-dev
-    vars:
-      - APP_PATH: core
-    secrets: true
-    run:
-      - "cp -r -f shared core"
   - environment: dev-eu-west-2
     type: gds
     region: eu-west-2
     app: dit-staging/activity-stream-dev/activity-stream-dev
-    vars:
-      - APP_PATH: core
-    secrets: true
-    run:
-      - "cp -r -f shared core"
-  - environment: production
-    type: gds
-    app: dit-services/activity-stream/activity-stream
     vars:
       - APP_PATH: core
     secrets: true
