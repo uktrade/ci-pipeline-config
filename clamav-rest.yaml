@@ -1,10 +1,19 @@
 name: clamav-rest
-namespace: webops
+namespace: platform
 scm: git@github.com:uktrade/dit-clamav-rest.git
 environments:
-  - environment: dev
+  - environment: staging
+    region: eu-west-2
     type: gds
-    app: dit-staging/dev-webops/clamav-rest
+    app: dit-staging/platform-staging/clamav-rest-staging
     vars: []
     secrets: true
     run: []
+  - environment: prod
+    region: eu-west-2
+    type: gds
+    app: dit-services/platform/clamav-rest
+    vars: []
+    secrets: true
+    run: []
+
