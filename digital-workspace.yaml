@@ -44,3 +44,12 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: eu-west-2-production
+    type: gds
+    region: eu-west-2
+    app: dit-services/intranet/digital-workspace
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"

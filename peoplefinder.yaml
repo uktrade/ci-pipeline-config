@@ -45,3 +45,12 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: eu-west-2-prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/intranet/peoplefinder
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
