@@ -4,15 +4,17 @@ scm: git@github.com:uktrade/digital-workspace.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-intranet/digital-workspace-dev
+    region: eu-west-2
+    app: dit-staging/intranet-dev/digital-workspace-dev
     vars:
-      - API: 'digital-workspace-dev.cloudapps.digital/'
+      - API: 'digital-workspace-dev.london.cloudapps.digital/'
     secrets: true
     run:
       - "true"
   - environment: staging
     type: gds
-    app: dit-staging/staging-intranet/digital-workspace-staging
+    region: eu-west-2
+    app: dit-staging/intranet-staging/digital-workspace-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
@@ -20,6 +22,15 @@ environments:
       - "true"
   - environment: prod
     type: gds
+    app: dit-services/intranet/digital-workspace
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
+  - environment: eu-west-2-production
+    type: gds
+    region: eu-west-2
     app: dit-services/intranet/digital-workspace
     vars:
       - DISABLE_COLLECTSTATIC: 1

@@ -5,7 +5,8 @@ scm: git@github.com:uktrade/peoplefinder.git
 environments:
   - environment: dev
     type: gds
-    app: dit-staging/dev-intranet/peoplefinder-dev
+    region: eu-west-2
+    app: dit-staging/intranet-dev/peoplefinder-dev
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
@@ -13,7 +14,8 @@ environments:
       - "true"
   - environment: staging
     type: gds
-    app: dit-staging/staging-intranet/peoplefinder-staging
+    region: eu-west-2
+    app: dit-staging/intranet-staging/peoplefinder-staging
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
@@ -21,6 +23,15 @@ environments:
       - "true"
   - environment: prod
     type: gds
+    app: dit-services/intranet/peoplefinder
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
+  - environment: eu-west-2-prod
+    type: gds
+    region: eu-west-2
     app: dit-services/intranet/peoplefinder
     vars:
       - DISABLE_COLLECTSTATIC: 1
