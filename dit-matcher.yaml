@@ -8,7 +8,7 @@ environments:
     region: eu-west-2
     app: dit-staging/exopps-staging/dit-matcher-staging
     vars:
-      - DISABLE_COLLECTSTATIC : 1
+      - DISABLE_COLLECTSTATIC: 1
     secrets: false
     run: []
   - environment: production
@@ -16,6 +16,6 @@ environments:
     region: eu-west-2
     app: dit-services/exopps/dit-matcher
     vars:
-      - DISABLE_COLLECTSTATIC : 1
+      - DISABLE_COLLECTSTATIC: 1
     secrets: false
     run: []
