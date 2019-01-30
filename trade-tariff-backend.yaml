@@ -6,7 +6,15 @@ environments:
   - environment: training
     type: gds
     app: dit-staging/training-tariffs/uktt-backend-training
-    vars:
-      - RAILS_ENV: production
+    vars: []
     secrets: true
     run: []
+environments:
+  - environment: training_eu-west-2
+    region: eu-west-2
+    type: gds
+    app: dit-staging/tariffs-training/uktt-backend-training
+    vars: []
+    secrets: true
+    run: []
+
