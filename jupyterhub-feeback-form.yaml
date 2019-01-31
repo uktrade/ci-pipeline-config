@@ -7,11 +7,13 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/platform-staging/jupyterhub-feedback-form-staging
+    vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
     region: eu-west-2
     app: dit-services/platform/jupyterhub-feedback-form
+    vars: []
     secrets: true
     run: []
