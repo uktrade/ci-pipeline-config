@@ -1,0 +1,32 @@
+name: great-international-ui
+namespace: directory
+scm: git@github.com:uktrade/great-international-ui.git
+environments:
+   - environment: dev
+     type: gds
+     region: eu-west-2
+     app: dit-staging/directory-dev/great-international-ui-dev
+     vars: []
+     secrets: true
+     run: []
+   - environment: staging
+     type: gds
+     region: eu-west-2
+     app: dit-staging/directory-staging/great-international-ui-staging
+     vars: []
+     secrets: true
+     run: []
+   - environment: uat
+     type: gds
+     region: eu-west-2
+     app: dit-staging/directory-uat/great-international-ui-uat
+     vars: []
+     secrets: true
+     run: []
+   - environment: prod
+     type: gds
+     region: eu-west-2
+     app: dit-services/directory/great-international-ui
+     vars: []
+     secrets: true
+     run: []
