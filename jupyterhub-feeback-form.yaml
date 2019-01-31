@@ -1,0 +1,17 @@
+---
+name: jupyterhub-feedback-form
+namespace: platform
+scm: git@github.com:uktrade/jupyterhub-feedback-form.git
+environments:
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/platform-staging/jupyterhub-feedback-form-staging
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/platform/jupyterhub-feedback-form
+    secrets: true
+    run: []
