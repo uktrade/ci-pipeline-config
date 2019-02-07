@@ -13,7 +13,7 @@ environments:
   - environment: dev-non-cdn
     type: gds
     region: eu-west-2
-    app: dit-staging/webops-dev/ip-filter-dev
+    app: dit-staging/webops-dev/ip-filter-dev-non-cdn
     vars: []
     secrets: true
     run: []
@@ -27,7 +27,7 @@ environments:
   - environment: production-non-cdn
     type: gds
     region: eu-west-2
-    app: dit-services/webops/ip-filter
+    app: dit-services/webops/ip-filter-non-cdn
     vars: []
     secrets: true
     run: []
