@@ -10,10 +10,24 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev-non-cdn
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/ip-filter-dev-non-cdn
+    vars: []
+    secrets: true
+    run: []
   - environment: production
     type: gds
     region: eu-west-2
     app: dit-services/webops/ip-filter
+    vars: []
+    secrets: true
+    run: []
+  - environment: production-non-cdn
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/ip-filter-non-cdn
     vars: []
     secrets: true
     run: []
