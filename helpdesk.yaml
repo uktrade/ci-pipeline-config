@@ -1,0 +1,26 @@
+---
+name: helpdesk 
+namespace: directory 
+scm: git@github.com:uktrade/dit-helpdesk.git
+environments:
+  - environment: dev 
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/helpdesk-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging 
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/helpdesk-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod 
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/helpdesk
+    vars: []
+    secrets: true
+    run: []
