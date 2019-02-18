@@ -11,6 +11,14 @@ environments:
       - APP_PATH: verification_feed
     secrets: true
     run: []
+  - environment: staging-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/activity-stream-staging/activity-stream-verification-feed-staging
+    vars:
+      - APP_PATH: verification_feed
+    secrets: true
+    run: []
   - environment: production-eu-west-2
     type: gds
     region: eu-west-2

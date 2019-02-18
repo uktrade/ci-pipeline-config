@@ -10,6 +10,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: staging-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/activity-stream-staging/activity-stream-kibana-staging
+    vars: []
+    secrets: true
+    run: []
   - environment: production-eu-west-2
     type: gds
     region: eu-west-2
