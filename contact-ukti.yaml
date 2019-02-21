@@ -21,3 +21,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: eu-west-2-prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/exopps/contact-ukti
+    vars: []
+    secrets: true
+    run: []
