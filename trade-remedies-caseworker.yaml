@@ -3,24 +3,10 @@ name: trade-remedies-caseworker
 namespace: traderemedies
 scm: git@github.com:uktrade/trade-remedies-caseworker.git
 environments:
-  - environment: dev
-    type: gds
-    app: dit-staging/dev-traderemedies/trade-remedies-caseworker-dev
-    vars: []
-    secrets: true
-    run:
-      - "true"
   - environment: dev-eu-west-2
     type: gds
     region: eu-west-2
     app: traderemedies-staging/traderemedies-dev/trade-remedies-caseworker-dev
-    vars: []
-    secrets: true
-    run:
-      - "true"
-  - environment: test
-    type: gds
-    app: dit-staging/dev-traderemedies/trade-remedies-caseworker-test
     vars: []
     secrets: true
     run:
@@ -33,24 +19,10 @@ environments:
     secrets: true
     run:
       - "true"
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-traderemedies/trade-remedies-caseworker-staging
-    vars: []
-    secrets: true
-    run:
-      - "true"
   - environment: staging-eu-west-2
     type: gds
     region: eu-west-2
     app: traderemedies-staging/traderemedies-staging/trade-remedies-caseworker-staging
-    vars: []
-    secrets: true
-    run:
-      - "true"
-  - environment: uat
-    type: gds
-    app: dit-staging/uat-traderemedies/trade-remedies-caseworker-uat
     vars: []
     secrets: true
     run:
