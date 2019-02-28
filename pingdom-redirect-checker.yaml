@@ -5,6 +5,7 @@ scm: git@github.com:uktrade/pingdom-redirect-checker.git
 environments:
   - environment: production
     type: gds
+    region: eu-west-2
     app: dit-services/webops/pingdom-redirect-checker
     secrets: true
     vars: []
