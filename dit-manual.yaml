@@ -5,6 +5,7 @@ scm: git@github.com:uktrade/rtfm.git
 environments:
   - environment: prod
     type: gds
+    region: eu-west-2
     app: dit-services/webops/rtfm
     secrets: true
     vars: []
