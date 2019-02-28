@@ -5,6 +5,7 @@ scm: git@github.com:uktrade/content-request-form.git
 environments:
   - environment: prod
     type: gds
+    region: eu-west-2
     app: dit-services/webops/content-request-form
     secrets: true
     vars: []
