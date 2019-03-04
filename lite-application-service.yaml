@@ -5,24 +5,28 @@ scm: git@github.com:uktrade/lite-application-service.git
 environments:
   - environment: dev
     type: gds
+    region: eu-west-2
     app: dit-staging/lite-dev/lite-application-service-dev
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
+    region: eu-west-2
     app: dit-staging/lite-staging/lite-application-service-staging
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
+    region: eu-west-2
     app: dit-staging/lite-uat/lite-application-service-uat
     vars: []
     secrets: true
     run: []
   - environment: prod
     type: gds
+    region: eu-west-2
     app: dit-services/lite/lite-application-service
     vars: []
     secrets: true
