@@ -1,33 +1,33 @@
 ---
-name: lite-application-service
+name: lite-api
 namespace: lite
-scm: git@github.com:uktrade/lite-application-service.git
+scm: git@github.com:uktrade/lite-api.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-dev/lite-application-service-dev
+    app: dit-staging/lite-dev/lite-api-dev
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-staging/lite-application-service-staging
+    app: dit-staging/lite-staging/lite-api-staging
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-uat/lite-application-service-uat
+    app: dit-staging/lite-uat/lite-api-uat
     vars: []
     secrets: true
     run: []
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-services/lite/lite-application-service
+    app: dit-services/lite/lite-api
     vars: []
     secrets: true
     run: []
