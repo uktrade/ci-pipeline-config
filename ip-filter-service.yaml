@@ -1,0 +1,20 @@
+---
+name: ip-filter-service 
+namespace: webops 
+scm: git@github.com:uktrade/dit-cf-security.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/ip-filter-service-dev
+    vars: []
+    secrets: true
+    run: []
+environments:
+  - environment: dev-cdn
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/ip-filter-service-cdn-dev
+    vars: []
+    secrets: true
+    run: []
