@@ -5,6 +5,7 @@ scm: git@github.com:uktrade/dit-cf-security.git
 environments:
   - environment: dev
     type: gds
+    region: eu-west-2
     app: dit-staging/webops-dev/ip-filter-service-dev
     vars: []
     secrets: true
@@ -12,7 +13,8 @@ environments:
 environments:
   - environment: dev-cdn
     type: gds
-    app: dit-staging/webops-dev/ip-filter-service-dev-cdn
+    region: eu-west-2
+    app: dit-staging/webops-dev/ip-filter-service-cdn-dev
     vars: []
     secrets: true
     run: []
