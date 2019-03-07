@@ -10,7 +10,6 @@ environments:
     vars: []
     secrets: true
     run: []
-environments:
   - environment: dev-cdn
     type: gds
     region: eu-west-2
