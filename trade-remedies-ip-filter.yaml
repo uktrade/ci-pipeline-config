@@ -1,0 +1,19 @@
+---
+name: ip-filter
+namespace: traderemedies
+scm: git@github.com:uktrade/cf-nginx-ip-filter.git
+environments:
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: traderemedies-staging/traderemedies-uat/ip-filter-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: traderemedies-services/traderemedies/ip-filter
+    vars: []
+    secrets: true
+    run: []
