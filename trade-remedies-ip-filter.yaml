@@ -1,5 +1,5 @@
 ---
-name: ip-filter
+name: trade-remedies-ip-filter
 namespace: traderemedies
 scm: git@github.com:uktrade/cf-nginx-ip-filter.git
 environments:
