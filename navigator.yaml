@@ -1,44 +1,33 @@
 ---
 name: navigator
-namespace: enav
+namespace: directory
 scm: git@github.com:uktrade/navigator.git
 environments:
-  - environment: dev
-    type: gds
-    app: dit-staging/dev-enav/navigator-dev
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-enav/navigator-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: production
-    type: gds
-    app: dit-services/enav/navigator
-    vars: []
-    secrets: true
-    run: []
   - environment: dev_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/enav-dev/navigator-dev
+    app: dit-staging/directory-dev/navigator-dev
     vars: []
     secrets: true
     run: []
   - environment: staging_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/enav-staging/navigator-staging
+    app: dit-staging/directory-staging/navigator-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/navigator-uat
     vars: []
     secrets: true
     run: []
   - environment: production_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-services/enav/navigator
+    app: dit-services/directory/navigator
     vars: []
     secrets: true
     run: []
