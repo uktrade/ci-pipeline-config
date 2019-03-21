@@ -3,18 +3,6 @@ name: directory-forms-api
 namespace: directory
 scm: git@github.com:uktrade/directory-forms-api.git
 environments:
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-directory/directory-forms-api-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: prod
-    type: gds
-    app: dit-services/directory/directory-forms-api
-    vars: []
-    secrets: true
-    run: []
   - environment: dev_eu-west-2
     type: gds
     region: eu-west-2
@@ -26,6 +14,13 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/directory-staging/directory-forms-api-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/directory-forms-api-uat
     vars: []
     secrets: true
     run: []

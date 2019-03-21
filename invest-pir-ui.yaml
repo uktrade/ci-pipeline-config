@@ -1,23 +1,33 @@
 ---
 name: invest-pir-ui
-namespace: iigb
+namespace: directory
 scm: https://github.com/uktrade/invest-pir-ui
 environments:
-  - environment: dev 
+  - environment: dev_eu-west-2
     type: gds
-    app: dit-staging/dev-investpir/invest-pir-ui-dev
+    region: eu-west-2
+    app: dit-staging/directory-dev/invest-pir-ui-dev
     secrets: true
     vars: []
     run: []
-  - environment: staging 
+  - environment: staging_eu-west-2
     type: gds
-    app: dit-staging/staging-investpir/invest-pir-ui-staging
+    region: eu-west-2
+    app: dit-staging/directory-staging/invest-pir-ui-staging
     secrets: true
     vars: []
     run: []
-  - environment: production
+  - environment: uat_eu-west-2
     type: gds
-    app: dit-services/investpir/invest-pir-ui
+    region: eu-west-2
+    app: dit-staging/directory-uat/invest-pir-ui-uat
+    secrets: true
+    vars: []
+    run: []
+  - environment: prod_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/invest-pir-ui
     secrets: true
     vars: []
     run: []

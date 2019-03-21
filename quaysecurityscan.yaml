@@ -1,0 +1,11 @@
+name: quaysecurityscan
+namespace: webops
+scm: git@github.com:uktrade/quay_security_scan.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/quaysecurityscan
+    vars: []
+    secrets: true
+    run: []

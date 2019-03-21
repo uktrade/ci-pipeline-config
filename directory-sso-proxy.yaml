@@ -3,24 +3,6 @@ name: directory-sso-proxy
 namespace: directory
 scm: git@github.com:uktrade/directory-sso-proxy.git
 environments:
-  - environment: dev
-    type: gds
-    app: dit-staging/dev-directory/directory-sso-proxy-dev
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    app: dit-staging/staging-directory/directory-sso-proxy-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: prod
-    type: gds
-    app: dit-services/directory/directory-sso-proxy
-    vars: []
-    secrets: true
-    run: []
   - environment: dev_eu-west-2
     type: gds
     region: eu-west-2
@@ -32,6 +14,13 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/directory-staging/directory-sso-proxy-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat_eu-west-2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/directory-sso-proxy-uat
     vars: []
     secrets: true
     run: []

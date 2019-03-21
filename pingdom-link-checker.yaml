@@ -4,6 +4,7 @@ namespace: webops
 scm: git@github.com:uktrade/pingdom-link-checker.git
 environments:
   - environment: prod
+    region: eu-west-2
     type: gds
     app: dit-services/webops/pingdom-link-checker
     secrets: true
