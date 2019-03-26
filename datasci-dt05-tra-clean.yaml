@@ -1,6 +1,6 @@
 ---
 name: dt05-tra-clean
-namespace: datasci
+namespace: datasci-trid
 scm: git@github.com:uktrade/dt05-clean-tra.git
 environments:
   - environment: staging
