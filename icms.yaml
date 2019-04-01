@@ -1,7 +1,7 @@
 ---
 name: icms
 namespace: icms
-scm: git@github.com:uktrade/icms-pdp.git
+scm: git@github.com:uktrade/icms.git
 environments:
   - environment: dev
     type: gds
