@@ -1,0 +1,19 @@
+---
+name: icms
+namespace: icms
+scm: git@github.com:uktrade/icms.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/icms-dev/icms-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/icms-staging/icms-staging
+    vars: []
+    secrets: true
+    run: []
