@@ -35,3 +35,12 @@ environments:
       - APP_PATH: core
     secrets: true
     run: []
+  - environment: production-2
+    type: gds
+    region: eu-west-2
+    app: dit-services/activity-stream/activity-stream
+    vars:
+      - APP_PATH: core
+    secrets: true
+    run: []
+
