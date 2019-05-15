@@ -3,6 +3,14 @@ name: dt07-reporting
 namespace: datasci
 scm: git@github.com:uktrade/dt07-reporting.git
 environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-dev/dt07-dev
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2

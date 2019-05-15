@@ -1,0 +1,19 @@
+---
+name: configure-user-profile
+namespace: datasci
+scm: git@github.com:uktrade/configure-user-profile.git
+environments:
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-staging/configure-user-profile-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/datasci/configure-user-profile
+    vars: []
+    secrets: true
+    run: []

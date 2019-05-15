@@ -1,0 +1,33 @@
+---
+name: lite-internal-frontend
+namespace: lite
+scm: git@github.com:uktrade/lite-internal-frontend.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-internal-frontend-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-internal-frontend-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-internal-frontend-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-internal-frontend
+    vars: []
+    secrets: true
+    run: []

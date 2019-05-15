@@ -1,0 +1,21 @@
+---
+name: dt05-tra-clean
+namespace: datasci-trid
+scm: git@github.com:uktrade/dt05-clean-tra.git
+environments:
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: traderemedies-staging/datasci-staging/dt05-staging
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: traderemedies-services/datasci/dt05
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
