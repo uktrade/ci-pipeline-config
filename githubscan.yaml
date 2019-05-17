@@ -1,0 +1,11 @@
+name: githubscan
+namespace: webops
+scm: git@github.com:uktrade/githubscan.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/githubscan
+    vars: []
+    secrets: true
+    run: []
