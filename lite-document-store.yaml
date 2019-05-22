@@ -1,0 +1,33 @@
+---
+name: lite-document-store
+namespace: lite
+scm: git@github.com:uktrade/lite-document-store.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-document-store-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-staging/lite-document-store-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-document-store-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-document-store
+    vars: []
+    secrets: true
+    run: []
