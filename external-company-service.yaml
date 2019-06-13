@@ -1,0 +1,17 @@
+---
+name: external-company-service 
+namespace: platform 
+scm: git@github.com:uktrade/dnb-service.git
+environments:
+  - environment: prod
+    type: gds
+    app: dit-services/platform/external-company-service
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging 
+    type: gds
+    app: dit-staging/platform-staging/external-company-service-staging
+    vars: []
+    secrets: true
+    run: []
