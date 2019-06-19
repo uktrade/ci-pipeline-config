@@ -1,0 +1,11 @@
+name: zpa-monitor
+namespace: webops
+scm: git@github.com:uktrade/zpa-monitor.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/zpa-monitor
+    vars: []
+    secrets: true
+    run: []
