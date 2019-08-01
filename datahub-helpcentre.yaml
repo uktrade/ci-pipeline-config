@@ -6,14 +6,14 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/webops-dev/datahub-helpdesk-dev
+    app: dit-staging/datahub-dev/datahub-helpdesk-dev
     vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/datahub/datahub-helpdesk-production
+    app: dit-services/datahub/datahub-helpdesk
     vars: []
     secrets: true
     run: []
