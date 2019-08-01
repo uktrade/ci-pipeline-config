@@ -1,6 +1,6 @@
 ---
 name: datahub-helpcentre
-namespace: helpcentre
+namespace: datahub
 scm: git@github.com:uktrade/data-hub-helpcentre.git
 environments:
   - environment: dev
