@@ -13,7 +13,7 @@ environments:
   - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/directory/directory-cms
+    app: dit-services/datahub/datahub-helpdesk-production
     vars: []
     secrets: true
     run: []
