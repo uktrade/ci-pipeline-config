@@ -1,0 +1,19 @@
+---
+name: datahub-helpcentre
+namespace: datahub
+scm: git@github.com:uktrade/data-hub-helpcentre.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-helpcentre-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/datahub/datahub-helpcentre
+    vars: []
+    secrets: true
+    run: []
