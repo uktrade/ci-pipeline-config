@@ -1,6 +1,6 @@
 name: prom-statsd-exporter 
 namespace: platform
-scm: git@github.com:uktrade/prom-statd-exporter.git
+scm: git@github.com:uktrade/prom-statsd-exporter.git
 environments:
   - environment: staging
     region: eu-west-2
