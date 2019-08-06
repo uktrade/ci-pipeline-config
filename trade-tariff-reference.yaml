@@ -1,0 +1,26 @@
+---
+name: trade-tariff-reference
+namespace: trade-tariffs
+scm: git@github.com:uktrade/trade-tariff-reference.git
+environments:
+  - environment: development
+    region: eu-west-2
+    type: gds
+    app: dit-staging/tariffs-dev/tariff-reference-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    region: eu-west-2
+    type: gds
+    app: dit-staging/tariffs-uat/tariff-reference-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    region: eu-west-2
+    type: gds
+    app: dit-services/tariffs/tariff-reference
+    vars: []
+    secrets: true
+    run: []
