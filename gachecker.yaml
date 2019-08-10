@@ -1,0 +1,11 @@
+name: gachecker
+namespace: webops
+scm: git@github.com:uktrade/gachecker.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/gachecker
+    vars: []
+    secrets: true
+    run: []
