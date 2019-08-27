@@ -6,7 +6,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/intranet-dev/workspace-wp
+    app: dit-staging/intranet-dev/workspace-wordpress-dev
     vars:
       - WP_TABLE_PREFIX: dit_
       - WP_DEBUG: false
