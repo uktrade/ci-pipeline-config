@@ -3,7 +3,14 @@ name: request-access-service
 namespace: webops
 scm: git@github.com:uktrade/request-access-service.git
 environments:
-  - environment: production_eu-west-2
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops/request-access-service-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
     type: gds
     region: eu-west-2
     app: dit-services/webops/request-access-service
