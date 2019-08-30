@@ -6,7 +6,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/webops/request-access-service-dev
+    app: dit-staging/webops-dev/request-access-service-dev
     vars: []
     secrets: true
     run: []
