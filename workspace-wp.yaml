@@ -10,5 +10,6 @@ environments:
     vars:
       - WP_TABLE_PREFIX: dit_
       - WP_DEBUG: false
+      - X_AUTOSCALING: True
     secrets: true
     run: []
