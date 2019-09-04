@@ -10,6 +10,23 @@ environments:
     vars:
       - WP_TABLE_PREFIX: dit_
       - WP_DEBUG: false
-      - X_AUTOSCALING: True
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-staging/workspace-wordpress-staging
+    vars:
+      - WP_TABLE_PREFIX: dit_
+      - WP_DEBUG: false
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/intranet/workspace-wordpress
+    vars:
+      - WP_TABLE_PREFIX: dit_
+      - WP_DEBUG: false
     secrets: true
     run: []
