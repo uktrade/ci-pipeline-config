@@ -9,7 +9,8 @@ environments:
     app: dit-staging/icms-dev/icms-dev
     vars: []
     secrets: true
-    run: []
+    run:
+      - "npm run deploy"
   - environment: staging
     type: gds
     region: eu-west-2
