@@ -1,0 +1,26 @@
+---
+name: workspace-wp
+namespace: intranet
+scm: git@github.com:uktrade/workspace-wp.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-dev/workspace-wordpress-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-staging/workspace-wordpress-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/intranet/workspace-wordpress
+    vars: []
+    secrets: true
+    run: []
