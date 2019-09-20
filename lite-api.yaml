@@ -16,7 +16,14 @@ environments:
     app: dit-staging/lite-dev/lite-api2-dev
     vars: []
     secrets: true
-    run: []  
+    run: []
+  - environment: demo
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-demo/lite-api-demo
+    vars: []
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
