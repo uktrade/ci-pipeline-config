@@ -31,6 +31,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: qa
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-qa/lite-exporter-frontend-qa
+    vars: []
+    secrets: true
+    run: []
   - environment: uat
     type: gds
     region: eu-west-2
