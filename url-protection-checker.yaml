@@ -5,14 +5,14 @@ scm: git@github.com:uktrade/url-protection-checker.git
 environments:
   - environment: dev
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-staging/webops-dev/url-protection-checker-dev
     vars: []
     secrets: true
     run: []
   - environment: prod
     type: gds
-    region: eu-west-2
+    region: eu-west-1
     app: dit-services/webops/url-protection-checker
     vars: []
     secrets: true
