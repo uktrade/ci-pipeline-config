@@ -10,10 +10,31 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev2
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-internal-frontend2-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: demo
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-demo/lite-internal-frontend-demo
+    vars: []
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
     app: dit-staging/lite-staging/lite-internal-frontend-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: qa
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-qa/lite-internal-frontend-qa
     vars: []
     secrets: true
     run: []
