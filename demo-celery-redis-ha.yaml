@@ -1,0 +1,11 @@
+name: demo-celery-redis-ha
+namespace: webops
+scm: git@github.com:uktrade/demo-celery-redis-ha.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/demo-celery-redis-ha
+    vars: []
+    secrets: true
+    run: []
