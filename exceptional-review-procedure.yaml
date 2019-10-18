@@ -1,0 +1,33 @@
+---
+name: exceptional-review-procedure
+namespace: directory
+scm: git@github.com:uktrade/exceptional-review-procedure.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/exceptional-review-procedure-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/exceptional-review-procedure-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/exceptional-review-procedure-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/exceptional-review-procedure
+    vars: []
+    secrets: true
+    run: []
