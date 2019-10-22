@@ -1,5 +1,5 @@
 ---
-name: contact_forms
+name: contact-forms
 namespace: trade-helpdesk
 scm: git@github.com:uktrade/dit-contact-forms.git
 environments:
@@ -13,14 +13,14 @@ environments:
   - environment: staging 
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-helpdesk-dev/contact-forms-staging
+    app: dit-staging/trade-helpdesk-staging/contact-forms-staging
     vars: []
     secrets: true
     run: []
   - environment: prod 
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-helpdesk-dev/contact-forms
+    app: dit-services/trade-helpdesk/contact-forms
     vars: []
     secrets: true
     run: []
