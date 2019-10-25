@@ -17,6 +17,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: training
+    region: eu-west-2
+    type: gds
+    app: dit-staging/tariffs-training/tariff-reference-training
+    vars: []
+    secrets: true
+    run: []
   - environment: production
     region: eu-west-2
     type: gds
