@@ -1,7 +1,7 @@
 ---
 name: datahub-api
 namespace: datahub
-scm: git@github.com:uktrade/data-hub-leeloo.git
+scm: git@github.com:uktrade/data-hub-api.git
 environments:
   - environment: dev
     type: gds
