@@ -10,6 +10,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: dev-yellow
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-dev-yellow
+    vars: []
+    secrets: true
+    run: []
   - environment: uat
     type: gds
     region: eu-west-2

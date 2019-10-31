@@ -1,12 +1,19 @@
 ---
 name: datahub-api
 namespace: datahub
-scm: git@github.com:uktrade/data-hub-leeloo.git
+scm: git@github.com:uktrade/data-hub-api.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/datahub-dev/datahub-api-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: dev-yellow
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datahub-dev/datahub-api-dev-yellow
     vars: []
     secrets: true
     run: []
