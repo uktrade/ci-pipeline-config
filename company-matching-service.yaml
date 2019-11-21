@@ -1,0 +1,26 @@
+---
+name: company-matching-service
+namespace: data-workspace-apps
+scm: git@github.com:uktrade/company-matching-service.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-dev/company-matching-service-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-staging/company-matching-service-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/data-workspace-apps/company-matching-service
+    vars: []
+    secrets: true
+    run: []
