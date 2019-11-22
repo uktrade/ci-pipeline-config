@@ -1,0 +1,31 @@
+name: digital-workspace-search
+namespace: intranet
+scm: git@github.com:uktrade/digital-workspace-search.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-dev/digital-workspace-search-dev
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-staging/digital-workspace-search-staging
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/intranet/digital-workspace-search
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run:
+      - "true"
