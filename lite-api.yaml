@@ -9,8 +9,8 @@ environments:
     app: dit-staging/lite-dev/lite-api-dev
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
   - environment: dev2
@@ -19,8 +19,8 @@ environments:
     app: dit-staging/lite-dev/lite-api2-dev
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-       build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+       python3-dev python3-pip python3-setuptools python3-wheel \
        python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
        libffi-dev shared-mime-info fonts-liberation2"
   - environment: demo
@@ -29,8 +29,8 @@ environments:
     app: dit-staging/lite-demo/lite-api-demo
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-pip python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
   - environment: staging
@@ -39,8 +39,8 @@ environments:
     app: dit-staging/lite-staging/lite-api-staging
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-pip python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
   - environment: qa
@@ -49,8 +49,8 @@ environments:
     app: dit-staging/lite-qa/lite-api-qa
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-pip python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
   - environment: uat
@@ -59,8 +59,8 @@ environments:
     app: dit-staging/lite-uat/lite-api-uat
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-pip python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
   - environment: prod
@@ -69,7 +69,7 @@ environments:
     app: dit-services/lite/lite-api
     vars: []
     secrets: true
-    run: "apt-get install -y libpq-dev gcc \
-      build-essential python3-dev python3-pip python3-setuptools python3-wheel \
+    run: "apt-get install -y gcc \
+      python3-dev python3-pip python3-setuptools python3-wheel \
       python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 \
       libffi-dev shared-mime-info fonts-liberation2"
