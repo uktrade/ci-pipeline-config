@@ -1,0 +1,26 @@
+---
+name: countries-of-interest-service
+namespace: data-workspace-apps
+scm: git@github.com:uktrade/countries-of-interest-service.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-dev/countries-of-interest-service-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-staging/countries-of-interest-service-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/data-workspace-apps/countries-of-interest-service
+    vars: []
+    secrets: true
+    run: []
