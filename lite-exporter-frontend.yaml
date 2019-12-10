@@ -13,7 +13,7 @@ environments:
   - environment: devpopcorn
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-devpopcorn/lite-exporter-frontend2-devpopcorn
+    app: dit-staging/lite-devpopcorn/lite-exporter-frontend-devpopcorn
     vars: []
     secrets: true
     run: []
