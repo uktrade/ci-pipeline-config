@@ -10,10 +10,10 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: dev2
+  - environment: devpopcorn
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-dev/lite-api2-dev
+    app: dit-staging/lite-devpopcorn/lite-api-devpopcorn
     vars: []
     secrets: true
     run: []
