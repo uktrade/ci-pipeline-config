@@ -1,0 +1,12 @@
+---
+name: market-access-fe
+namespace: market-access
+scm: git@github.com:uktrade/market-access-python-frontend.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-dev/market-access-dev2
+    vars: []
+    secrets: true
+    run: []
