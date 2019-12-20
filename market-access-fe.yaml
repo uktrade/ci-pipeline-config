@@ -6,7 +6,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/market-access-dev/market-access-dev2
+    app: dit-staging/market-access-dev/market-access-pyfe-dev
     vars: []
     secrets: true
     run: []
