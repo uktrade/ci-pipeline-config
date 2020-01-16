@@ -11,7 +11,7 @@ environments:
     secrets: true
     run:
       - "mkdir -p vendor"
-      - "pip download -r requirements.txt --no-binary=:all: -d vendor"
+      - "pip download -r requirements.txt -d vendor"
   - environment: staging
     type: gds
     region: eu-west-2
