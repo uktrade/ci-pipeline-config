@@ -9,7 +9,9 @@ environments:
     app: dit-staging/data-workspace-apps-dev/countries-of-interest-service-dev
     vars: []
     secrets: true
-    run: []
+    run:
+      - "mkdir -p vendor"
+      - "pip download -r requirements.txt --no-binary=:all: -d vendor"
   - environment: staging
     type: gds
     region: eu-west-2
