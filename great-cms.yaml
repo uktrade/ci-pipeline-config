@@ -1,0 +1,33 @@
+---
+name: great-cms
+namespace: directory
+scm: git@github.com:uktrade/great-cms.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/great-cms-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/great-cms-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/great-cms-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/great-cms
+    vars: []
+    secrets: true
+    run: []

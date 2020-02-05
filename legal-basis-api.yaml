@@ -1,0 +1,25 @@
+name: legal-basis-api
+namespace: legal-basis
+scm: git@github.com:uktrade/legal-basis-api.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/legal-basis-dev/legal-basis-api-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/legal-basis-staging/legal-basis-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/legal-basis/legal-basis-api
+    vars: []
+    secrets: true
+    run: []

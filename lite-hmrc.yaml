@@ -1,54 +1,54 @@
 ---
-name: lite-api
+name: lite-hmrc
 namespace: lite
-scm: git@github.com:uktrade/lite-api.git
+scm: git@github.com:uktrade/lite-hmrc.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-dev/lite-api-dev
+    app: dit-staging/lite-dev/lite-hmrc-dev
     vars: []
     secrets: true
     run: []
   - environment: devpopcorn
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-devpopcorn/lite-api-devpopcorn
+    app: dit-staging/lite-devpopcorn/lite-hmrc-devpopcorn
     vars: []
     secrets: true
     run: []
   - environment: demo
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-demo/lite-api-demo
+    app: dit-staging/lite-demo/lite-hmrc-demo
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-staging/lite-api-staging
+    app: dit-staging/lite-staging/lite-hmrc-staging
     vars: []
     secrets: true
     run: []
   - environment: qa
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-qa/lite-api-qa
+    app: dit-staging/lite-qa/lite-hmrc-qa
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-uat/lite-api-uat
+    app: dit-staging/lite-uat/lite-hmrc-uat
     vars: []
     secrets: true
     run: []
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-services/lite/lite-api
+    app: dit-services/lite/lite-hmrc
     vars: []
     secrets: true
     run: []
