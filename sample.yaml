@@ -4,7 +4,7 @@ namespace: shared
 scm: git@github.com:uktrade/cf-sample-app-nodejs.git
 environments:
   - environment: dev
-    type: gds-v3
+    type: gds
     region: eu-west-2
     app: dit-staging/webops-dev/sample-app
     vars: []
