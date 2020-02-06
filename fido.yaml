@@ -12,13 +12,6 @@ environments:
     run: []
   - environment: production
     type: gds
-    app: dit-services/finance/fido-prod
-    vars: []
-    secrets: true
-    run: []
-  - environment: eu-west-2-production
-    type: gds
-    region: eu-west-2
     app: dit-services/finance/fido
     vars: []
     secrets: true
