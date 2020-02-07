@@ -17,6 +17,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: sandbox
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-sandbox/lite-exporter-frontend-sandbox
+    vars: []
+    secrets: true
+    run: []
   - environment: demo
     type: gds
     region: eu-west-2
