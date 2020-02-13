@@ -10,3 +10,17 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-uat/market-access-pyfe-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/market-access/market-access-pyfe
+    vars: []
+    secrets: true
+    run: []
