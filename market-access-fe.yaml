@@ -7,23 +7,23 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-dev/market-access-pyfe-dev
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: true
-    run:
-      - "./release-tasks.sh"
+    run: []
   - environment: uat
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-uat/market-access-pyfe-uat
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: true
-    run:
-      - "./release-tasks.sh"
+    run: []
   - environment: prod
     type: gds
     region: eu-west-2
     app: dit-services/market-access/market-access-pyfe
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: true
-    run:
-      - "./release-tasks.sh"
+    run: []
