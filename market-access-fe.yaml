@@ -9,18 +9,21 @@ environments:
     app: dit-staging/market-access-dev/market-access-pyfe-dev
     vars: []
     secrets: true
-    run: []
+    run:
+      - "./release-tasks.sh"
   - environment: uat
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-uat/market-access-pyfe-uat
     vars: []
     secrets: true
-    run: []
+    run:
+      - "./release-tasks.sh"
   - environment: prod
     type: gds
     region: eu-west-2
     app: dit-services/market-access/market-access-pyfe
     vars: []
     secrets: true
-    run: []
+    run:
+      - "./release-tasks.sh"
