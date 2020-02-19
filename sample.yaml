@@ -8,7 +8,7 @@ environments:
     region: eu-west-2
     app: dit-staging/webops-dev/sample-app
     vars: []
-    secrets: false
+    secrets: true
     run: []
   - environment: s3
     type: s3
