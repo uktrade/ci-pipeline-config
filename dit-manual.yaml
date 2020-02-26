@@ -10,10 +10,3 @@ environments:
     secrets: true
     vars: []
     run: []
-  - environment: dev
-    type: gds
-    region: eu-west-2
-    app: dit-staging/webops-dev/rtfm
-    secrets: true
-    vars: []
-    run: []
