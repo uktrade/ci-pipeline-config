@@ -1,0 +1,26 @@
+---
+name: dataservices-helpcentre
+namespace: live-services
+scm: git@github.com:uktrade/data-hub-helpcentre.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-services-helpcentre-dev/data-services-helpcentre-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-services/data-services-helpcentre-staging/data-services-helpcentre-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/data-services-helpcentre/data-services-helpcentre
+    vars: []
+    secrets: true
+    run: []
