@@ -13,7 +13,7 @@ environments:
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-services/data-services-helpcentre-staging/data-services-helpcentre-staging
+    app: dit-services/data-services-helpcentre-dev/data-services-helpcentre-staging
     vars: []
     secrets: true
     run: []
