@@ -1,6 +1,6 @@
 ---
 name: dataservices-helpcentre
-namespace: liveservices
+namespace: live-services
 scm: git@github.com:uktrade/data-hub-helpcentre.git
 environments:
   - environment: dev
