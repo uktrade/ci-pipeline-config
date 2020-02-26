@@ -24,10 +24,10 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: koala
+  - environment: devkoala
     type: gds
     region: eu-west-2
-    app: dit-staging/lite-koala/lite-exporter-frontend-koala
+    app: dit-staging/lite-devkoala/lite-exporter-frontend-devkoala
     vars: []
     secrets: true
     run: []
