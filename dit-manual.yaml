@@ -6,7 +6,7 @@ environments:
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-staging/webops/rtfm-prod
+    app: dit-services/webops/rtfm-prod
     secrets: true
     vars: []
     run: []
