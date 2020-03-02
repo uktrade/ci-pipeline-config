@@ -1,0 +1,11 @@
+name:  feed-aggregator
+namespace: webops
+scm: git@github.com:uktrade/feed-aggregator.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/rssNews
+    vars: []
+    secrets: true
+    run: []
