@@ -5,7 +5,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-services/webops/rssNews
+    app: dit-staging/feed-aggregator-dev/rssNews
     vars: []
     secrets: true
     run: []
