@@ -1,7 +1,7 @@
 ---
-name: directory-cms
+name: directory-cms-flower
 namespace: directory
-scm: git@github.com:uktrade/directory-cms.git
+scm: git@github.com:uktrade/flower-runner.git
 environments:
   - environment: dev
     type: gds
