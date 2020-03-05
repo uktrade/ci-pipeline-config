@@ -1,0 +1,33 @@
+---
+name: directory-cms-flower
+namespace: directory
+scm: git@github.com:uktrade/flower-runner.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-dev/directory-cms-flower-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/directory-cms-flower-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-uat/directory-cms-flower-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/directory-cms-flower
+    vars: []
+    secrets: true
+    run: []
