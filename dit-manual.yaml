@@ -1,12 +1,12 @@
 ---
-name: dit-manual 
-namespace: webops 
+name: dit-manual
+namespace: webops
 scm: git@github.com:uktrade/rtfm.git
 environments:
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-staging/webops-dev/rtfm
+    app: dit-services/webops/rtfm-prod
     secrets: true
     vars: []
     run: []

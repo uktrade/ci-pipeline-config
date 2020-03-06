@@ -8,13 +8,6 @@ environments:
     region: eu-west-2
     app: dit-staging/webops-dev/sample-app
     vars: []
-    secrets: false
-    run: []
-  - environment: s3
-    type: s3
-    app: ci-pipeline-s3-test
-    vars:
-      - S3_WEBSITE_SRC: public
     secrets: true
     run:
       - "ls -al ${WORKSPACE}"

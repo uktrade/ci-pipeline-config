@@ -1,0 +1,11 @@
+name: proxy-pingdom-check
+namespace: webops
+scm: git@github.com:uktrade/proxy-pingdom-check.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/proxy-pingdom-check
+    vars: []
+    secrets: true
+    run: []

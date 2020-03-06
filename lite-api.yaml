@@ -17,6 +17,20 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: sandbox
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-sandbox/lite-api-sandbox
+    vars: []
+    secrets: true
+    run: []
+  - environment: devkoala
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devkoala/lite-api-devkoala
+    vars: []
+    secrets: true
+    run: []
   - environment: demo
     type: gds
     region: eu-west-2

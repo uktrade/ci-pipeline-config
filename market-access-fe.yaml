@@ -7,6 +7,23 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-dev/market-access-pyfe-dev
-    vars: []
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-uat/market-access-pyfe-uat
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/market-access/market-access-pyfe
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
