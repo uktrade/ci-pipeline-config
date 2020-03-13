@@ -1,6 +1,6 @@
 ---
 name: enquiry-mgmt-tool
-namespace: enquiry-mgmt-tool
+namespace: ready-to-trade
 scm: git@github.com:uktrade/enquiry-mgmt-tool.git
 environments:
   - environment: dev
