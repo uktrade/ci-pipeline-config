@@ -1,7 +1,7 @@
 ---
 name: global-uk-tariff
 namespace: trade-tariffs
-scm: git@github.com:uktrade/global-uk-tarrif.git
+scm: git@github.com:uktrade/global-uk-tariff.git
 environments:
     - environment: dev
         type: gds
