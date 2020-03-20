@@ -23,7 +23,7 @@ environments:
     app: dit-staging/tariffs-staging/global-uk-tariff-staging
     vars: []
     secrets: true
-        run: []
+    run: []
   - environment: production
     type: gds
     app: dit-services/tariffs/global-uk-tariff
