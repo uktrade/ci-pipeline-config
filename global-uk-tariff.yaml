@@ -3,30 +3,30 @@ name: global-uk-tariff
 namespace: trade-tariffs
 scm: git@github.com:uktrade/global-uk-tariff.git
 environments:
-    - environment: dev
+    - environment: development
         type: gds
         region: eu-west-2
         app: dit-staging/tariffs-dev/global-uk-tariff-dev
         vars: []
-        secrets: false
+        secrets: true
         run: []
     - environment: uat
         type: gds
         region: eu-west-2
         app: dit-staging/tariffs-uat/global-uk-tariff-uat
         vars: []
-        secrets: false
+        secrets: true
         run: []
     - environment: staging
         type: gds
         region: eu-west-2
         app: dit-staging/tariffs-staging/global-uk-tariff-staging
         vars: []
-        secrets: false
+        secrets: true
         run: []
     - environment: production
         type: gds
         app: dit-services/tariffs/global-uk-tariff
         vars: []
-        secrets: false
+        secrets: true
         run: []
