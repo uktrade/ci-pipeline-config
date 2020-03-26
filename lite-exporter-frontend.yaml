@@ -31,6 +31,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: perf
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-perf/lite-exporter-frontend-perf
+    vars: []
+    secrets: true
+    run: []
   - environment: demo
     type: gds
     region: eu-west-2
