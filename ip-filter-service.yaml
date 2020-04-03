@@ -17,3 +17,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/ip-filter-service
+    vars: []
+    secrets: true
+    run: []
