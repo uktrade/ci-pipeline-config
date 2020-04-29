@@ -12,7 +12,7 @@ environments:
     run: []
   - environment: production
     type: gds
-    app: dit-services/finance/fido
+    app: dit-services/finance/fft
     vars: []
     secrets: true
     run: []
