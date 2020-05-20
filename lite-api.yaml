@@ -31,6 +31,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: devdata
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devdata/lite-api-devdata
+    vars: []
+    secrets: true
+    run: []
   - environment: perf
     type: gds
     region: eu-west-2
