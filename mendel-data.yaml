@@ -1,0 +1,26 @@
+---
+name: mendel-data
+namespace: trade-helpdesk 
+scm: git@github.com:uktrade/dit-mendel-data.git
+environments:
+  - environment: dev 
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-helpdesk-dev/mendel-data-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging 
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-helpdesk-staging/mendel-data-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod 
+    type: gds
+    region: eu-west-2
+    app: dit-services/trade-helpdesk/mendel-data
+    vars: []
+    secrets: true
+    run: []
