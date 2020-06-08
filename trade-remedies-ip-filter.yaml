@@ -1,7 +1,7 @@
 ---
 name: trade-remedies-ip-filter
 namespace: traderemedies
-scm: git@github.com:uktrade/cf-nginx-ip-filter.git
+scm: git@github.com:uktrade/dit-cf-security.git
 environments:
   - environment: uat
     type: gds
