@@ -3,10 +3,10 @@ name: mendel-data
 namespace: trade-helpdesk 
 scm: git@github.com:uktrade/dit-mendel-data.git
 environments:
-  - environment: dev 
+  - environment: development
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-helpdesk-dev/mendel-data-dev
+    app: dit-staging/trade-helpdesk-dev/mendel-data-development
     vars: []
     secrets: true
     run: []
@@ -17,10 +17,10 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: prod
+  - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/trade-helpdesk/mendel-data-prod
+    app: dit-services/trade-helpdesk/mendel-data-production
     vars: []
     secrets: true
     run: []
