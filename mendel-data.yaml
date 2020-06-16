@@ -6,7 +6,7 @@ environments:
   - environment: development
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-helpdesk-dev/mendel-data-development
+    app: dit-staging/trade-helpdesk-dev/mendel-data-dev
     vars: []
     secrets: true
     run: []
@@ -20,7 +20,7 @@ environments:
   - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/trade-helpdesk/mendel-data-production
+    app: dit-services/trade-helpdesk/mendel-data
     vars: []
     secrets: true
     run: []
