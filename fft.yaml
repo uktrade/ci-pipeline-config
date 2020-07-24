@@ -1,18 +1,25 @@
 ---
-name: fido
+name: fft
 namespace: finance
 scm: git@github.com:uktrade/fido.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/finance-dev/fido-dev
+    app: dit-staging/finance-dev/fft-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: hotfix
+    type: gds
+    region: eu-west-2
+    app: dit-staging/finance-hotfix/fft-hotfix
     vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
-    app: dit-services/finance/fido
+    app: dit-services/finance/fft
     vars: []
     secrets: true
     run: []

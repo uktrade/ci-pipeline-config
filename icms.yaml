@@ -10,8 +10,7 @@ environments:
     vars: []
     secrets: true
     run:
-      - pip install pipenv
-      - pipenv lock -r > requirements.txt
+      - cp requirements-prod.txt requirements.txt
   - environment: staging
     type: gds
     region: eu-west-2
@@ -19,5 +18,4 @@ environments:
     vars: []
     secrets: true
     run:
-      - pip install pipenv
-      - pipenv lock -r > requirements.txt
+      - cp requirements-prod.txt requirements.txt

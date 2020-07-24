@@ -31,3 +31,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: beta
+    type: gds
+    region: eu-west-2
+    app: dit-services/directory/great-cms-beta
+    vars: []
+    secrets: true
+    run: []
