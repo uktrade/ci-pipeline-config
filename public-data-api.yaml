@@ -1,0 +1,26 @@
+---
+name: public-data-api
+namespace: public-data-api
+scm: git@github.com:uktrade/public-data-api.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/public-apis-dev/data-api-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/public-apis-staging/data-api-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/public-apis/data-api
+    vars: []
+    secrets: true
+    run: []
