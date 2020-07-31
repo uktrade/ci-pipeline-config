@@ -1,5 +1,5 @@
 ---
-name: data-api
+name: public-data-api
 namespace: public-apis
 scm: git@github.com:uktrade/public-data-api.git
 environments:
