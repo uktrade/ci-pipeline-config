@@ -10,3 +10,17 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-access-uat/trade-access-program-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-access-staging/trade-access-program-staging
+    vars: []
+    secrets: true
+    run: []
