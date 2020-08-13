@@ -1,7 +1,7 @@
 ---
 name: lite-internal-frontend
 namespace: lite
-scm: git@github.com:uktrade/lite-internal-frontend.git
+scm: git@github.com:uktrade/lite-frontend.git
 environments:
   - environment: dev
     type: gds

@@ -1,7 +1,7 @@
 ---
 name: lite-exporter-frontend
 namespace: lite
-scm: git@github.com:uktrade/lite-exporter-frontend.git
+scm: git@github.com:uktrade/lite-frontend.git
 environments:
   - environment: dev
     type: gds
