@@ -1,0 +1,12 @@
+---
+name: great-styles
+namespace: directory
+scm: git@github.com:uktrade/great-styles.git
+environments:
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/directory-staging/great-styles-staging
+    vars: []
+    secrets: false
+    run: []
