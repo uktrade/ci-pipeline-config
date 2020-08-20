@@ -10,6 +10,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/enquiry-mgmt-tool-uat/enquiry-mgmt-tool-uat
+    vars: []
+    secrets: true
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
