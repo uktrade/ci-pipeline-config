@@ -1,0 +1,29 @@
+---
+name: market-access-public-fe
+namespace: market-access
+scm: git@github.com:uktrade/market-access-public-frontend.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-dev/market-access-publicfe-dev
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-uat/market-access-publicfe-uat
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/market-access/market-access-publicfe
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
