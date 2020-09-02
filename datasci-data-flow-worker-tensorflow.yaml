@@ -10,7 +10,7 @@ environments:
     vars: []
     secrets: true
     run:
-      - "echo $Git_Commit"
+      - "echo $Version"
       - "cp manifest-tensorflow.yml manifest.yml"
   - environment: staging
     type: gds
@@ -19,7 +19,7 @@ environments:
     vars: []
     secrets: true
     run:
-      - "echo $Git_Commit"
+      - "echo $Version"
       - "cp manifest-tensorflow.yml manifest.yml"
   - environment: production
     type: gds
@@ -28,5 +28,5 @@ environments:
     vars: []
     secrets: true
     run:
-      - "echo $Git_Commit"
+      - "echo $Version"
       - "cp manifest-tensorflow.yml manifest.yml"
