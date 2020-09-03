@@ -10,7 +10,7 @@ environments:
     vars: []
     secrets: true
     run:
-      - "envsubst '${Version}' < manifest-tensorflow.yml > manifest.yml"
+      - "cp manifest-tensorflow.yml manifest.yml"
   - environment: staging
     type: gds
     region: eu-west-2
@@ -18,7 +18,7 @@ environments:
     vars: []
     secrets: true
     run:
-      - "envsubst '${Version}' < manifest-tensorflow.yml > manifest.yml"
+      - "cp manifest-tensorflow.yml manifest.yml"
   - environment: production
     type: gds
     region: eu-west-2
@@ -26,4 +26,4 @@ environments:
     vars: []
     secrets: true
     run:
-      - "envsubst '${Version}' < manifest-tensorflow.yml > manifest.yml"
+      - "cp manifest-tensorflow.yml manifest.yml"
