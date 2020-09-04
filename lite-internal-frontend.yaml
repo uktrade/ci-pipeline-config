@@ -17,13 +17,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: sandbox
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-sandbox/lite-internal-frontend-sandbox
-    vars: []
-    secrets: true
-    run: []
   - environment: devkoala
     type: gds
     region: eu-west-2
@@ -38,31 +31,10 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: perf
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-perf/lite-internal-frontend-perf
-    vars: []
-    secrets: true
-    run: []
   - environment: demo
     type: gds
     region: eu-west-2
     app: dit-staging/lite-demo/lite-internal-frontend-demo
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-staging/lite-internal-frontend-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: qa
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-qa/lite-internal-frontend-qa
     vars: []
     secrets: true
     run: []
