@@ -1,0 +1,17 @@
+---
+name: return-to-office
+namespace: platform
+scm: git@github.com:uktrade/return-to-office.git
+environments:
+  - environment: staging
+    type: gds
+    app: dit-staging/platform-staging/return-to-office-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    app: dit-services/platform/return-to-office
+    vars: []
+    secrets: true
+    run: []
