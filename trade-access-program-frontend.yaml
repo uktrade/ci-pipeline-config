@@ -1,0 +1,26 @@
+---
+name: trade-access-program-frontend
+namespace: trade-access
+scm: git@github.com:uktrade/trade-access-program.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-access-dev/trade-access-program-frontend-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-access-uat/trade-access-program-frontend-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-access-staging/trade-access-program-frontend-staging
+    vars: []
+    secrets: true
+    run: []
