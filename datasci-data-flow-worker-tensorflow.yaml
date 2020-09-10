@@ -11,6 +11,14 @@ environments:
     secrets: true
     run:
       - "cp manifest-tensorflow.yml manifest.yml"
+  - environment: dev-a
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-dev/data-flow-worker-tensorflow-dev-a
+    vars: []
+    secrets: true
+    run:
+      - "cp manifest-tensorflow.yml manifest.yml"
   - environment: staging
     type: gds
     region: eu-west-2
