@@ -1,26 +1,26 @@
 ---
-name: trade-access-program
+name: trade-access-program-backoffice
 namespace: trade-access
 scm: git@github.com:uktrade/trade-access-program.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-access-dev/trade-access-program-dev
+    app: dit-staging/trade-access-dev/trade-access-program-backoffice-dev
     vars: []
     secrets: true
     run: []
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-access-uat/trade-access-program-uat
+    app: dit-staging/trade-access-uat/trade-access-program-backoffice-uat
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/trade-access-staging/trade-access-program-staging
+    app: dit-staging/trade-access-staging/trade-access-program-backoffice-staging
     vars: []
     secrets: true
     run: []
