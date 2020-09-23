@@ -1,6 +1,6 @@
 ---
 name: dso-exhibitions-v2
-namespace: live-services
+namespace: dso
 scm: git@github.com:uktrade/dso-exhibitions-v2.git
 environments:
   - environment: dev
