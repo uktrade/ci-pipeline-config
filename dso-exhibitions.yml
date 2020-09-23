@@ -1,0 +1,26 @@
+---
+name: dso-exhibitions-v2
+namespace: dso
+scm: git@github.com:uktrade/dso-exhibitions-v2.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/dso-dev/dso-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/dso-staging/dso-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/dso/dso
+    vars: []
+    secrets: true
+    run: []
