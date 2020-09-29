@@ -10,6 +10,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: cms
+    type: gds
+    region: eu-west-2
+    app: dit-staging/trade-helpdesk-dev/helpdesk-cms-dev
+    vars: []
+    secrets: true
+    run: []
   - environment: staging 
     type: gds
     region: eu-west-2
