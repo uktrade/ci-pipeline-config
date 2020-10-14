@@ -1,0 +1,17 @@
+---
+name: process-metrics
+namespace: webops
+scm: git@github.com:uktrade/cf-process-metrics-exporter.git
+environments:
+  - environment: production
+    type: gds
+    app: dit-services/webops/process-metrics
+    vars: []
+    secrets: true
+    run: []
+  - environment: dev
+    type: gds
+    app: dit-staging/webops-dev/process-metrics-dev
+    vars: []
+    secrets: true
+    run: []
