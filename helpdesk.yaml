@@ -31,6 +31,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: cms-prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/trade-helpdesk/helpdesk-cms
+    vars: []
+    secrets: true
+    run: []
   - environment: prod 
     type: gds
     region: eu-west-2
