@@ -3,9 +3,15 @@ name: zenslackchat
 namespace: webops
 scm: git@github.com:uktrade/django-zenslackchat.git
 environments:
-  - environment: dev 
+  - environment: stage 
     type: gds
-    app: dit-staging/sre-ticketing-dev/zenslackchat
+    app: dit-staging/sre-ticketing-dev/zenslackchat-stage
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    app: dit-services/sre-ticketing/zenslackchat-prod
     vars: []
     secrets: true
     run: []
