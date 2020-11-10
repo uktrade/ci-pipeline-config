@@ -12,7 +12,7 @@ environments:
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-staging/feed-aggregator-dev/rssNews
+    app: dit-services/feed-aggregator-prod/rssNews-prod
     vars: []
     secrets: true
     run: []    
