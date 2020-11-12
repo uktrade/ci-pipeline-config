@@ -1,0 +1,12 @@
+---
+name: lite-data-flow
+namespace: lite
+scm: git@github.com:uktrade/paas-airflow.git
+environments:
+  - environment: devdata
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devdata/lite-data-flow-devdata
+    vars: []
+    secrets: true
+    run: []
