@@ -3,10 +3,43 @@ name: lite-data-flow
 namespace: lite
 scm: git@github.com:uktrade/paas-airflow.git
 environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-dev/lite-data-flow-dev
+    vars: []
+    secrets: true
+    run:
+      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
+  - environment: devpopcorn
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devpopcorn/lite-data-flow-devpopcorn
+    vars: []
+    secrets: true
+    run:
+      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
+  - environment: devkoala
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devkoala/lite-data-flow-devkoala
+    vars: []
+    secrets: true
+    run:
+      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
   - environment: devdata
     type: gds
     region: eu-west-2
     app: dit-staging/lite-devdata/lite-data-flow-devdata
     vars: []
     secrets: true
-    run: []
+    run:
+      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
+  - environment: demo
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-demo/lite-data-flow-demo
+    vars: []
+    secrets: true
+    run:
+      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
