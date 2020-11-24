@@ -1,33 +1,26 @@
 ---
 name: import-uk-fe
-namespace: directory
+namespace: trade-helpdesk
 scm: git@github.com:uktrade/import-uk-fe.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-dev/import-uk-fe-dev
+    app: dit-staging/trade-helpdesk-dev/import-uk-fe-dev
     vars: []
     secrets: true
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-staging/import-uk-fe-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: uat
-    type: gds
-    region: eu-west-2
-    app: dit-staging/directory-uat/import-uk-fe-uat
+    app: dit-staging/trade-helpdesk-staging/import-uk-fe-staging
     vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
     region: eu-west-2
-    app: dit-services/directory/import-uk-fe
+    app: dit-services/trade-helpdesk/import-uk-fe
     vars: []
     secrets: true
     run: []
