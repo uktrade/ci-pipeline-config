@@ -2,10 +2,10 @@ name: cost-monitor
 namespace: webops
 scm: git@github.com:uktrade/cost_monitor.git
 environments:
-  - environment: production
+  - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-services/webops/cost-monitor
+    app: dit-stagging/webops-dev/cost-monitor
     vars: []
     secrets: true
     run: []
