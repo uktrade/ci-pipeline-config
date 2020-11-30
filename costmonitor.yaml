@@ -5,7 +5,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-stagging/webops-dev/cost-monitor
+    app: dit-staging/webops-dev/cost-monitor
     vars: []
     secrets: true
     run: []
