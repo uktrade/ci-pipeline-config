@@ -45,6 +45,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: config
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-config/lite-api-config
+    vars: []
+    secrets: true
+    run: []
   - environment: prod
     type: gds
     region: eu-west-2
