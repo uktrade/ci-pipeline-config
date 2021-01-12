@@ -1,0 +1,19 @@
+---
+name: paas-logdrain-scanner
+namespace: webops
+scm: git@github.com:uktrade/paas-logdrain-scanner.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-1
+    app: dit-staging/webops-dev/paas-logdrain-scanner-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-1
+    app: dit-services/webops/paas-logdrain-scanner
+    vars: []
+    secrets: true
+    run: []
