@@ -1,0 +1,19 @@
+---
+name: paas-autoscaler-monitor
+namespace: webops
+scm: git@github.com:uktrade/paas-autoscaler-monitor.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/paas-autoscaler-monitor-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/paas-autoscaler-monitor
+    vars: []
+    secrets: true
+    run: []
