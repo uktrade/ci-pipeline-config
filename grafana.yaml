@@ -1,0 +1,11 @@
+name: grafana
+namespace: webops
+scm: git@github.com:uktrade/cf-grafana.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/dit-grafana
+    vars: []
+    secrets: true
+    run: []

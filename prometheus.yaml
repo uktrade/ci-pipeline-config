@@ -1,0 +1,11 @@
+name: prometheus
+namespace: webops
+scm: git@github.com:uktrade/cf-prometheus.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/dit-prometheus
+    vars: []
+    secrets: true
+    run: []
