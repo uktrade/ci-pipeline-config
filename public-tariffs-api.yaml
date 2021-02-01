@@ -1,0 +1,26 @@
+---
+name: public-tariffs-api
+namespace: public-apis
+scm: git@github.com:uktrade/trade-tariff-api.git
+environments:
+  - environment: development
+    region: eu-west-2
+    type: gds
+    app: dit-staging/public-apis-dev/tariffs-api-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    region: eu-west-2
+    type: gds
+    app: dit-staging/public-apis-staging/tariffs-api-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    region: eu-west-2
+    type: gds
+    app: dit-services/public-apis/tariffs-api
+    vars: []
+    secrets: true
+    run: []
