@@ -9,3 +9,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/dit-grafana
+    vars: []
+    secrets: true
+    run: []    
