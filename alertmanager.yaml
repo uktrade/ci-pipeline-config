@@ -1,0 +1,18 @@
+name: prometheus
+namespace: webops
+scm: git@github.com:uktrade/cf-prometheus-alertmanager.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/dit-alertmanager
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/dit-alertmanager
+    vars: []
+    secrets: true
+    run: []    
