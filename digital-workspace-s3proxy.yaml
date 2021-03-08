@@ -2,6 +2,20 @@ name: digital-workspace-s3proxy
 namespace: intranet
 scm: git@github.com:uktrade/s3proxy.git
 environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-dev/digital-workspace-s3proxy-dev
+    secrets: true
+    vars: []
+    run: []
+  - environment: training
+    type: gds
+    region: eu-west-2
+    app: dit-staging/intranet-training/digital-workspace-s3proxy-training
+    secrets: true
+    vars: []
+    run: []
   - environment: staging
     type: gds
     region: eu-west-2
