@@ -35,6 +35,14 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: hotfix-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: traderemedies-staging/traderemedies-hotfix/trade-remedies-public-hotfix
+    vars: []
+    secrets: true
+    run:
+      - "true"      
   - environment: prod-eu-west-2
     type: gds
     region: eu-west-2
