@@ -24,6 +24,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: training
+    type: gds
+    region: eu-west-2
+    app: dit-staging/tariffs-training/tamato-training
+    vars: []
+    secrets: true
+    run: []    
   - environment: production
     type: gds
     app: dit-services/tariffs/tamato
