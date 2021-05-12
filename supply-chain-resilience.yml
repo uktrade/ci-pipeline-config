@@ -1,0 +1,25 @@
+---
+name: supply-chain-resilience
+namespace: supply-chain-resilience
+scm: git@github.com:uktrade/defend-data-capture.git
+environments:
+  - environment: development
+    type: gds
+    region: eu-west-2
+    app: dit-staging/supply-chain-resilience-dev/update-supply-chain-information-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/supply-chain-resilience-staging/update-supply-chain-information-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/supply-chain-resilience/update-supply-chain-information
+    vars: []
+    secrets: true
+    run: []
