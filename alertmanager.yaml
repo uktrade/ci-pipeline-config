@@ -1,4 +1,4 @@
-name: prometheus
+name: alertmanager
 namespace: webops
 scm: git@github.com:uktrade/cf-prometheus-alertmanager.git
 environments:
