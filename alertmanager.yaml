@@ -5,7 +5,7 @@ environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/webops-dev/dit-alertmanager
+    app: dit-staging/webops-dev/dit-alertmanager-dev
     vars: []
     secrets: true
     run: []
