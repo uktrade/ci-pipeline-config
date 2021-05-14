@@ -11,6 +11,14 @@ environments:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/exopps-uat/dit-matcher-uat
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
   - environment: production
     type: gds
     region: eu-west-2

@@ -21,6 +21,15 @@ environments:
     secrets: true
     run:
       - "true"
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/exopps-uat/export-opportunities-uat
+    vars:
+      - RAILS_ENV: production
+    secrets: true
+    run:
+      - "true"
   - environment: production
     type: gds
     region: eu-west-2
