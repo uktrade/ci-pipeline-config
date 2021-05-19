@@ -1,5 +1,5 @@
 ---
-name: supply-chain-resilience
+name: update-supply-chain-information 
 namespace: supply-chain-resilience
 scm: git@github.com:uktrade/defend-data-capture.git
 environments:
