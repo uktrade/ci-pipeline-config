@@ -1,0 +1,12 @@
+---
+name: export-support-service
+namespace: export-support-service
+scm: git@github.com:uktrade/export-support.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/export-support-dev/export-support-dev
+    vars: []
+    secrets: true
+    run: []
