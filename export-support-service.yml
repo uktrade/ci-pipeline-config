@@ -10,3 +10,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/export-support/export-support-prod
+    vars: []
+    secrets: true
+    run: []
