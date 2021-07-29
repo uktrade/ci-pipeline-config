@@ -10,6 +10,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: devdata
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-devdata/lite-hmrc-devdata
+    vars: []
+    secrets: true
+    run: []
   - environment: devpopcorn
     type: gds
     region: eu-west-2
