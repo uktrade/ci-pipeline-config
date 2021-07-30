@@ -17,6 +17,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: prod-data
+    type: gds
+    region: eu-west-2
+    app: dit-staging/finance-prod-data/fft-prod-data
+    vars: []
+    secrets: true
+    run: []    
   - environment: production
     type: gds
     app: dit-services/finance/fft

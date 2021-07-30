@@ -15,3 +15,9 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: uat 
+    type: gds
+    app: dit-staging/platform-staging/external-company-service-uat
+    vars: []
+    secrets: true
+    run: []

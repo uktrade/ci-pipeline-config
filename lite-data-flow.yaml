@@ -43,3 +43,10 @@ environments:
     secrets: true
     run:
       - "git clone https://github.com/uktrade/lite-airflow-dags.git"
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/lite/lite-data-flow
+    vars: []
+    secrets: true
+    run:  []
