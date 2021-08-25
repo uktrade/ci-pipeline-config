@@ -1,0 +1,11 @@
+---
+name: konga
+namespace: platform 
+scm: git@github.com:uktrade/docker-konga.git
+environments:
+  - environment: staging 
+    type: gds
+    app: dit-staging/platform-staging/konga-staging
+    vars: []
+    secrets: true
+    run: []

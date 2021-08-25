@@ -1,0 +1,11 @@
+---
+name: kong 
+namespace: platform 
+scm: git@github.com:uktrade/docker-kong.git
+environments:
+  - environment: staging 
+    type: gds
+    app: dit-staging/platform-staging/kong-staging
+    vars: []
+    secrets: true
+    run: []
