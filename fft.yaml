@@ -1,7 +1,7 @@
 ---
 name: fft
 namespace: finance
-scm: git@github.com:uktrade/fido.git
+scm: git@github.com:uktrade/fft.git
 environments:
   - environment: dev
     type: gds
