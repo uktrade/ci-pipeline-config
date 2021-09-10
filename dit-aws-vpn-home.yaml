@@ -1,0 +1,19 @@
+---
+name: dit-aws-vpn-home
+namespace: webops
+scm: git@github.com:uktrade/dit-aws-vpn-home.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/webops-dev/dit-aws-vpn-home-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/webops/dit-aws-vpn-home
+    vars: []
+    secrets: true
+    run: []
