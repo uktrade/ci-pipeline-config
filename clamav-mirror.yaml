@@ -1,0 +1,16 @@
+name: clamav-mirror
+namespace: platform
+scm: git@github.com:uktrade/clamav-s3-mirror.git
+environments:
+  - environment: staging
+    type: gds
+    app: dit-staging/platform-staging/clamav-mirror-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    app: dit-services/platform/clamav-mirror
+    vars: []
+    secrets: true
+    run: []
