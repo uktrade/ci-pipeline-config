@@ -7,12 +7,12 @@ environments:
     type: gds
     app: dit-staging/platform-staging/clamav-staging
     vars: []
-    secrets: false
+    secrets: true 
     run: []
   - environment: prod
     region: eu-west-2
     type: gds
     app: dit-services/platform/clamav
     vars: []
-    secrets: false
+    secrets: true 
     run: []
