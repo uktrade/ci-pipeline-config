@@ -1,18 +1,18 @@
-name: contractor-approval
+name: resourcing-approval
 namespace: live-services
-scm: git@github.com:uktrade/contractor-approval.git
+scm: git@github.com:uktrade/resourcing-approval.git
 environments:
   - environment: dev
     type: gds
     region: eu-west-2
-    app: dit-staging/contractor-approval-dev/contractor-approval-dev
+    app: dit-staging/resourcing-approval-dev/resourcing-approval-dev
     secrets: true
     vars: []
     run: []
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/contractor-approval-staging/contractor-approval-staging
+    app: dit-staging/resourcing-approval-staging/resourcing-approval-staging
     secrets: true
     vars: []
     run: []
