@@ -1,0 +1,13 @@
+---
+name: jml
+namespace: jml-dev
+scm: git@github.com:uktrade/jml.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/jml-dev/joiners-movers-leavers-dev
+    vars: []
+    secrets: true
+    run: []
+
