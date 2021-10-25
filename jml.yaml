@@ -1,6 +1,6 @@
 ---
 name: jml
-namespace: jml-dev
+namespace: live-services
 scm: git@github.com:uktrade/jml.git
 environments:
   - environment: dev
