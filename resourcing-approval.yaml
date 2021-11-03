@@ -16,3 +16,10 @@ environments:
     secrets: true
     vars: []
     run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/resourcing-approval/resourcing-approval
+    secrets: true
+    vars: []
+    run: []
