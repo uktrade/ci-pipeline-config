@@ -5,7 +5,7 @@ environments:
   - environment: dev
     region: eu-west-2
     type: gds
-    app: dit-staging/enhanced-support-dev/cenhanced-support-runner-dev
+    app: dit-staging/enhanced-support-dev/enhanced-support-runner-dev
     vars: []
     secrets: true 
     run: []
