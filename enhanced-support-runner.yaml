@@ -1,0 +1,25 @@
+name: enhanced-support-runner
+namespace: enhanced-support
+scm: git@github.com:froddd/digital-form-builder.git
+environments:
+  - environment: dev
+    region: eu-west-2
+    type: gds
+    app: dit-staging/enhanced-support-dev/enhanced-support-runner-dev
+    vars: []
+    secrets: true 
+    run: []
+  - environment: staging
+    region: eu-west-2
+    type: gds
+    app: dit-staging/enhanced-support-staging/enhanced-support-runner-staging
+    vars: []
+    secrets: true 
+    run: []
+  - environment: prod
+    region: eu-west-2
+    type: gds
+    app: dit-services/enhanced-support/enhanced-support-runner
+    vars: []
+    secrets: true 
+    run: []
