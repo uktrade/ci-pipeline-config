@@ -8,18 +8,21 @@ environments:
     app: dit-staging/enhanced-support-dev/enhanced-support-designer-dev
     vars: []
     secrets: true 
-    run: []
+    run: 
+      - "sed -i 's/$APP_NAME/enhanced-support-designer/g' manifest.yml"
   - environment: staging
     region: eu-west-2
     type: gds
     app: dit-staging/enhanced-support-staging/enhanced-support-designer-staging
     vars: []
     secrets: true 
-    run: []
+    run:
+      - "sed -i 's/$APP_NAME/enhanced-support-designer/g' manifest.yml"
   - environment: prod
     region: eu-west-2
     type: gds
     app: dit-services/enhanced-support/enhanced-support-designer
     vars: []
     secrets: true 
-    run: []
+    run:
+      - "sed -i 's/$APP_NAME/enhanced-support-designer/g' manifest.yml"
