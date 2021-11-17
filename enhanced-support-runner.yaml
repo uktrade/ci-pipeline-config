@@ -9,7 +9,7 @@ environments:
     vars: []
     secrets: true 
     run:
-      - "sed -i 's/$APP_NAME/enhanced-support-runner/g' manifest.yml"
+      - "sed -i 's/APP_NAME/enhanced-support-runner/g' manifest.yml"
   - environment: staging
     region: eu-west-2
     type: gds
@@ -17,7 +17,7 @@ environments:
     vars: []
     secrets: true 
     run:
-      - "sed -i 's/$APP_NAME/enhanced-support-runner/g' manifest.yml"
+      - "sed -i 's/APP_NAME/enhanced-support-runner/g' manifest.yml"
   - environment: prod
     region: eu-west-2
     type: gds
@@ -25,4 +25,4 @@ environments:
     vars: []
     secrets: true 
     run:
-      - "sed -i 's/$APP_NAME/enhanced-support-runner/g' manifest.yml"
+      - "sed -i 's/APP_NAME/enhanced-support-runner/g' manifest.yml"
