@@ -1,0 +1,19 @@
+---
+name: icms-hmrc
+namespace: live-services
+scm: git@github.com:uktrade/icms-hmrc
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/icms-dev/icms-hmrc-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/icms-staging/icms-hmrc-staging
+    vars: []
+    secrets: true
+    run: []
