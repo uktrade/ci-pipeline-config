@@ -1,6 +1,6 @@
 ---
 name: icms-hmrc
-namespace: live-services
+namespace: icms
 scm: git@github.com:uktrade/icms-hmrc
 environments:
   - environment: dev
