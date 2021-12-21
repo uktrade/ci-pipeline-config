@@ -1,0 +1,12 @@
+---
+name: data-workspace-prototypes
+namespace: data-workspace-apps
+scm: git@github.com:uktrade/data-workspace-prototypes.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-dev/data-workspace-prototypes-dev
+    vars: []
+    secrets: true
+    run: []
