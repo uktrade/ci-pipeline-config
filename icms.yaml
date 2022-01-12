@@ -19,3 +19,11 @@ environments:
     secrets: true
     run:
       - cp requirements-prod.txt requirements.txt
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/icms/icms
+    vars: []
+    secrets: true
+    run:
+      - cp requirements-prod.txt requirements.txt
