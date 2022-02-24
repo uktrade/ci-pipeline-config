@@ -11,22 +11,6 @@ environments:
     secrets: true
     run:
       - "git clone https://github.com/uktrade/lite-airflow-dags.git"
-  - environment: devpopcorn
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-devpopcorn/lite-data-flow-devpopcorn
-    vars: []
-    secrets: true
-    run:
-      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
-  - environment: devkoala
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-devkoala/lite-data-flow-devkoala
-    vars: []
-    secrets: true
-    run:
-      - "git clone https://github.com/uktrade/lite-airflow-dags.git"
   - environment: devdata
     type: gds
     region: eu-west-2
