@@ -10,20 +10,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: devpopcorn
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-devpopcorn/lite-exporter-frontend-devpopcorn
-    vars: []
-    secrets: true
-    run: []
-  - environment: devkoala
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-devkoala/lite-exporter-frontend-devkoala
-    vars: []
-    secrets: true
-    run: []
   - environment: devdata
     type: gds
     region: eu-west-2
@@ -42,13 +28,6 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/lite-uat/lite-exporter-frontend-uat
-    vars: []
-    secrets: true
-    run: []
-  - environment: config
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-config/lite-exporter-frontend-config
     vars: []
     secrets: true
     run: []

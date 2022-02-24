@@ -17,13 +17,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: devpopcorn
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-devpopcorn/lite-hmrc-devpopcorn
-    vars: []
-    secrets: true
-    run: []
   - environment: demo
     type: gds
     region: eu-west-2
@@ -35,13 +28,6 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/lite-staging/lite-hmrc-staging
-    vars: []
-    secrets: true
-    run: []
-  - environment: qa
-    type: gds
-    region: eu-west-2
-    app: dit-staging/lite-qa/lite-hmrc-qa
     vars: []
     secrets: true
     run: []
