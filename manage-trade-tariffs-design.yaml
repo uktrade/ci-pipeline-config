@@ -3,7 +3,7 @@ name: manage-trade-tariffs-design
 namespace: trade-tariffs
 scm: git@github.com:uktrade/manage-trade-tariffs-design.git
 environments:
-  - environment: development
+  - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/tariffs-dev/manage-trade-tariffs-design-dev
@@ -26,7 +26,7 @@ environments:
     run: []
   - environment: production
     type: gds
-    app: dit-services/tariffs/tamato/manage-trade-tariffs-design
+    app: dit-services/tariffs/manage-trade-tariffs-design
     vars: []
     secrets: true
     run: []
