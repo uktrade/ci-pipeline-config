@@ -6,7 +6,7 @@ environments:
   - environment: development
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-dev/manage-trade-tariffs-design
+    app: dit-staging/tariffs-dev/manage-trade-tariffs-design-dev
     vars: []
     secrets: true
     run: []
@@ -21,6 +21,12 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/tariffs-staging/manage-trade-tariffs-design-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/tariffs/tamato/manage-trade-tariffs-design
     vars: []
     secrets: true
     run: []
