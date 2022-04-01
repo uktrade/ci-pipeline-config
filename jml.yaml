@@ -19,7 +19,7 @@ environments:
     run: []
   - environment: production
     type: gds
-    app: dit-service/jml/jml
+    app: dit-services/jml/jml
     vars: []
     secrets: true
     run: []
