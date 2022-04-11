@@ -17,10 +17,10 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: staging
+  - environment: test
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-staging/manage-trade-tariffs-design-staging
+    app: dit-staging/tariffs-test/manage-trade-tariffs-design-test
     vars: []
     secrets: true
     run: []
