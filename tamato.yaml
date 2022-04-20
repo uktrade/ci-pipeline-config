@@ -20,7 +20,7 @@ environments:
   - environment: test 
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-staging/tamato-test
+    app: dit-staging/tariffs-test/tamato-test
     vars: []
     secrets: true
     run: []
