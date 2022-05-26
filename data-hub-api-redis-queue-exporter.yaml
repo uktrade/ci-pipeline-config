@@ -1,6 +1,6 @@
 name: data-hub-api-redis-queue-exporter
 namespace: webops
-scm: git@github.com:uktrade/data-hub-api.git
+scm: git@github.com:uktrade/prom-rq-exporter.git
 environments:
   - environment: dev
     region: eu-west-2
