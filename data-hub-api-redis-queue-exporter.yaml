@@ -5,7 +5,7 @@ environments:
   - environment: dev
     region: eu-west-2
     type: gds
-    app: dit-staging/webops-dev/data-hub-api-redis-queue-exporter
+    app: dit-staging/webops-dev/data-hub-api-redis-queue-exporter-dev
     vars: []
     secrets: true
     run: []
