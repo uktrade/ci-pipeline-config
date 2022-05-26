@@ -1,0 +1,11 @@
+name: data-hub-api-redis-queue-exporter
+namespace: webops
+scm: git@github.com:uktrade/data-hub-api.git
+environments:
+  - environment: dev
+    region: eu-west-2
+    type: gds
+    app: dit-staging/webops-dev/data-hub-api-redis-queue-exporter
+    vars: []
+    secrets: true
+    run: []
