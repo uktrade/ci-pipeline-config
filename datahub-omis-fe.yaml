@@ -17,13 +17,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: demo
-    type: gds
-    region: eu-west-2
-    app: dit-staging/datahub-dev/datahub-omis-demo
-    vars: []
-    secrets: true
-    run: []
   - environment: staging
     type: gds
     region: eu-west-2
