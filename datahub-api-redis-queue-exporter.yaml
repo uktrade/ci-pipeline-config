@@ -26,7 +26,7 @@ environments:
   - environment: production
     region: eu-west-2
     type: gds
-    app: dit-services/datahub/datahub-api-redis-queue-exporter-production
+    app: dit-services/datahub/datahub-api-redis-queue-exporter
     vars: []
     secrets: true
     run: []
