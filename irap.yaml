@@ -1,0 +1,25 @@
+name: irap
+namespace: live-services
+scm: git@github.com:uktrade/irap.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/irap-dev/irap-dev
+    secrets: true
+    vars: []
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/irap-staging/irap-staging
+    secrets: true
+    vars: []
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/irap/irap
+    secrets: true
+    vars: []
+    run: []
