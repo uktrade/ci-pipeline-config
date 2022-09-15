@@ -1,33 +1,33 @@
 ---
-name: navigator
+name: selling-online-overseas
 namespace: directory
-scm: git@github.com:uktrade/navigator.git
+scm: git@github.com:uktrade/selling-online-overseas.git
 environments:
   - environment: dev_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-dev/navigator-dev
+    app: dit-staging/directory-dev/selling-online-overseas-dev
     vars: []
     secrets: true
     run: []
   - environment: staging_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-staging/navigator-staging
+    app: dit-staging/directory-staging/selling-online-overseas-staging
     vars: []
     secrets: true
     run: []
   - environment: uat_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-staging/directory-uat/navigator-uat
+    app: dit-staging/directory-uat/selling-online-overseas-uat
     vars: []
     secrets: true
     run: []
   - environment: production_eu-west-2
     type: gds
     region: eu-west-2
-    app: dit-services/directory/navigator
+    app: dit-services/directory/selling-online-overseas
     vars: []
     secrets: true
     run: []
