@@ -11,10 +11,10 @@ environments:
     secrets: true
     run:
       - "true"
-  - environment: johnny-eu-west-2
+  - environment: chicago-eu-west-2
     type: gds
     region: eu-west-2
-    app: traderemedies-staging/traderemedies-dev/trade-remedies-public-johnny
+    app: traderemedies-staging/traderemedies-dev/trade-remedies-public-chicago
     vars: []
     secrets: true
     run:
