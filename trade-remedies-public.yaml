@@ -19,14 +19,6 @@ environments:
     secrets: true
     run:
       - "true"
-  - environment: staging-eu-west-2
-    type: gds
-    region: eu-west-2
-    app: traderemedies-staging/traderemedies-staging/trade-remedies-public-staging
-    vars: []
-    secrets: true
-    run:
-      - "true"
   - environment: uat-eu-west-2
     type: gds
     region: eu-west-2
