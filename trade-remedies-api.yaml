@@ -3,6 +3,14 @@ name: trade-remedies-api
 namespace: traderemedies
 scm: git@github.com:uktrade/trade-remedies-api.git
 environments:
+  - environment: berlin-eu-west-2
+    type: gds
+    region: eu-west-2
+    app: traderemedies-staging/traderemedies-dev/trade-remedies-api-berlin
+    vars: []
+    secrets: true
+    run:
+      - "true"
   - environment: tokyo-eu-west-2
     type: gds
     region: eu-west-2
