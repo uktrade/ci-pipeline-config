@@ -6,13 +6,13 @@ environments:
   - environment: uat
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-uat/tamato-uat
+    app: dit-staging/tariffs-uat/tamato-flower-uat
     vars: []
     secrets: true
     run: []
   - environment: production
     type: gds
-    app: dit-services/tariffs/tamato
+    app: dit-services/tariffs/tamato-flower
     vars: []
     secrets: true
     run: []
