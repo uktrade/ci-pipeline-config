@@ -1,0 +1,18 @@
+---
+name: tamato-flower
+namespace: trade-tariffs
+scm: git@github.com:uktrade/flower-runner.git
+environments:
+  - environment: uat
+    type: gds
+    region: eu-west-2
+    app: dit-staging/tariffs-uat/tamato-flower-uat
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    app: dit-services/tariffs/tamato-flower
+    vars: []
+    secrets: true
+    run: []
