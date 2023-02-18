@@ -1,0 +1,19 @@
+---
+name: sftp-notification--hmrc-tra
+namespace: public-apis
+scm: git@github.com:uktrade/s3-dropbox.git
+environments:
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/public-apis-staging/sftp-notification--hmrc-tra--staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/public-apis/sftp-notification--hmrc-tra
+    vars: []
+    secrets: true
+    run: []
