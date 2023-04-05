@@ -1,6 +1,6 @@
 ---
 name: help-desk-service
-namespace: help-desk-service
+namespace: sre-ticketing
 scm: git@github.com:uktrade/help-desk-service.git
 environments:
   - environment: staging
