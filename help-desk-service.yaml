@@ -3,7 +3,7 @@ name: help-desk-service
 namespace: sre-ticketing
 scm: git@github.com:uktrade/help-desk-service.git
 environments:
-  - environment: staging
+  - environment: dev
     type: gds
     region: eu-west-2
     app: dit-staging/sre-ticketing-dev/help-desk-service-dev
