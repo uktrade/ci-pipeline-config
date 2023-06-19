@@ -26,7 +26,7 @@ environments:
   - environment: hotfix
     type: gds
     region: eu-west-2
-    app: dit-services/intranet-hotfix/digital-workspace-v2-hotfix
+    app: dit-services/intranet/digital-workspace-v2-hotfix
     vars: []
     secrets: true
     run: []
