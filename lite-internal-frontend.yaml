@@ -38,6 +38,13 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: support
+    type: gds
+    region: eu-west-2
+    app: dit-staging/lite-uat/lite-internal-frontend-support
+    vars: []
+    secrets: true
+    run: []
   - environment: prod
     type: gds
     region: eu-west-2
