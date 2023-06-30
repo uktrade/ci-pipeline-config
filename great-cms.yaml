@@ -16,7 +16,11 @@ environments:
     app: dit-staging/directory-staging/great-cms-staging
     vars: []
     secrets: true
-    run: []
+    run: 
+      - "nvm use"
+      - "nnpm install -g npm@8.15.1"
+      - "npm install"
+      - "npm run build"
   - environment: uat
     type: gds
     region: eu-west-2
