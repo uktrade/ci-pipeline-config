@@ -6,7 +6,7 @@ environments:
   - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/helpdesk-staging/help-desk-service
+    app: dit-staging/helpdesk-staging/help-desk-service-staging
     vars: []
     secrets: true
     run: []
