@@ -1,19 +1,19 @@
 ---
 name: help-desk-service
-namespace: platform
+namespace: helpdesk
 scm: git@github.com:uktrade/help-desk-service.git
 environments:
-  - environment: dev
+  - environment: staging
     type: gds
     region: eu-west-2
-    app: dit-staging/sre-ticketing-dev/help-desk-service-dev
+    app: dit-staging/helpdesk-staging/help-desk-service-staging
     vars: []
     secrets: true
     run: []
   - environment: prod
     type: gds
     region: eu-west-2
-    app: dit-services/sre-ticketing/help-desk-service
+    app: dit-services/helpdesk/help-desk-service
     vars: []
     secrets: true
     run: []
