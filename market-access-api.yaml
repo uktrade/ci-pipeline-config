@@ -3,17 +3,17 @@ name: market-access-api
 namespace: market-access
 scm: git@github.com:uktrade/market-access-api.git
 environments:
-  - environment: dev
+  - environment: gotham
     type: gds
     region: eu-west-2
-    app: dit-staging/market-access-dev/market-access-api-dev
+    app: dit-staging/market-access-dev/market-access-api-gotham
     vars: []
     secrets: true
     run: []
-  - environment: demo
+  - environment: atlantis
     type: gds
     region: eu-west-2
-    app: dit-staging/market-access-dev/market-access-api-demo
+    app: dit-staging/market-access-dev/market-access-api-atlantis
     vars: []
     secrets: true
     run: []
@@ -21,13 +21,6 @@ environments:
     type: gds
     region: eu-west-2
     app: dit-staging/market-access-uat/market-access-api-uat
-    vars: []
-    secrets: true
-    run: []
-  - environment: staging
-    type: gds
-    region: eu-west-2
-    app: dit-staging/market-access-staging/market-access-api-staging
     vars: []
     secrets: true
     run: []
