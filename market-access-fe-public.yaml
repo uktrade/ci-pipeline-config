@@ -3,10 +3,18 @@ name: market-access-public-fe
 namespace: market-access
 scm: git@github.com:uktrade/market-access-public-frontend.git
 environments:
-  - environment: dev
+  - environment: gotham
     type: gds
     region: eu-west-2
-    app: dit-staging/market-access-dev/market-access-publicfe-dev
+    app: dit-staging/market-access-dev/market-access-publicfe-gotham
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: []
+  - environment: atlantis
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-dev/market-access-publicfe-atlantis
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true

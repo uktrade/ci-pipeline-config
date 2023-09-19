@@ -3,14 +3,22 @@ name: market-access-fe
 namespace: market-access
 scm: git@github.com:uktrade/market-access-python-frontend.git
 environments:
-  - environment: dev
+  - environment: gotham
     type: gds
     region: eu-west-2
-    app: dit-staging/market-access-dev/market-access-pyfe-dev
+    app: dit-staging/market-access-dev/market-access-pyfe-gotham
     vars:
       - DISABLE_COLLECTSTATIC: 1
     secrets: true
     run: []
+  - environment: atlantis
+    type: gds
+    region: eu-west-2
+    app: dit-staging/market-access-dev/market-access-pyfe-atlantis
+    vars:
+      - DISABLE_COLLECTSTATIC: 1
+    secrets: true
+    run: [ ]
   - environment: uat
     type: gds
     region: eu-west-2
