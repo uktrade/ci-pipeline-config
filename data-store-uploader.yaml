@@ -1,0 +1,26 @@
+---
+name: data-store-uploader
+namespace: data-workspace-apps
+scm: git@github.com:uktrade/data-store-uploader.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-dev/data-store-uploader-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/data-workspace-apps-staging/data-store-uploader-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: prod
+    type: gds
+    region: eu-west-2
+    app: dit-services/data-workspace-apps/data-store-uploader
+    vars: []
+    secrets: true
+    run: []
