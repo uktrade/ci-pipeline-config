@@ -1,0 +1,20 @@
+---
+name: prototypes-on-paas
+namespace: prototypes-on-paas
+scm: git@github.com:uktrade/prototypes-on-paas.git
+environments:
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/prototypes-on-paas/prototypes-on-paas-production
+    vars: []
+    secrets: true
+    run: []
+  - environment: development
+    type: gds
+    region: eu-west-2
+    app: dit-services/prototypes-on-paas/prototypes-on-paas-development
+    vars: []
+    secrets: true
+    run: []
+
