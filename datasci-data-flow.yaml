@@ -10,13 +10,6 @@ environments:
     vars: []
     secrets: true
     run: []
-  - environment: dev-a
-    type: gds
-    region: eu-west-2
-    app: dit-staging/datasci-dev/data-flow-dev-a
-    vars: []
-    secrets: true
-    run: []
   - environment: staging
     type: gds
     region: eu-west-2
