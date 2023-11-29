@@ -1,0 +1,26 @@
+---
+name: data-flow-data-science
+namespace: datasci
+scm: git@github.com:uktrade/data-flow.git
+environments:
+  - environment: dev
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-dev/data-flow-data-science-dev
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/datasci-staging/data-flow-data-science-staging
+    vars: []
+    secrets: true
+    run: []
+  - environment: production
+    type: gds
+    region: eu-west-2
+    app: dit-services/datasci/data-flow-data-science
+    vars: []
+    secrets: true
+    run: []
