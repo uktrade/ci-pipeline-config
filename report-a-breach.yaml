@@ -1,0 +1,20 @@
+---
+name: report-a-breach
+namespace: report-a-breach
+scm: git@github.com:uktrade/report-a-breach-prototype.git
+environments:
+  - environment: development
+    type: gds
+    region: eu-west-2
+    app: dit-staging/report-a-breach-development/report-a-breach-development
+    vars: []
+    secrets: true
+    run: []
+  - environment: staging
+    type: gds
+    region: eu-west-2
+    app: dit-staging/report-a-breach-staging/report-a-breach-staging
+    vars: []
+    secrets: true
+    run: []
+
