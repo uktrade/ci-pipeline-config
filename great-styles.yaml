@@ -8,5 +8,5 @@ environments:
     region: eu-west-2
     app: dit-staging/directory-staging/great-styles-staging
     vars: []
-    secrets: false
+    secrets: true
     run: []
