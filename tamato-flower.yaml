@@ -6,7 +6,7 @@ environments:
   - environment: development
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-uat/tamato-flower-development
+    app: dit-staging/tariffs-dev/tamato-flower-development
     vars: []
     secrets: true
     run: []
@@ -19,7 +19,7 @@ environments:
   - environment: test
     type: gds
     region: eu-west-2
-    app: dit-staging/tariffs-uat/tamato-flower-test
+    app: dit-staging/tariffs-test/tamato-flower-test
     vars: []
     secrets: true
     run: []
