@@ -24,3 +24,10 @@ environments:
     vars: []
     secrets: true
     run: []
+  - environment: test
+    region: eu-west-2
+    type: gds
+    app: dit-staging/public-apis-test/tariffs-api-test
+    vars: []
+    secrets: true
+    run: []
